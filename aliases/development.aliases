@@ -1,0 +1,23 @@
+# Laravel
+alias art="php artisan --verbose"
+alias tinker="php artisan tinker --verbose"
+alias fresh="php artisan migrate:refresh --seed --verbose"
+
+# Node
+alias npm="npm --no-progress"
+
+# Vagrant
+alias v="vagrant"
+
+# Vim
+alias vi="vim"
+alias ct="ctags -R --exclude=vendor --exclude=node_modules --exclude=bower_components ."
+
+function :e() {
+    mvim -c "cd ${1-.}" "${1-.}"
+}
+
+# SVN
+alias svn_add="svn st | grep '?' | awk '{print \$2}' | xargs svn add"
+alias svn_rm="svn st | grep '!' | awk '{print \$2}' | xargs svn rm"
+alias svnci="svn_add && svn_rm && svn ci -m"
