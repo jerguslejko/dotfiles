@@ -14,7 +14,7 @@ SYMFONY_CONSOLE_TOOLS="composer valet artisan"
 source $ZSH/oh-my-zsh.sh
 
 # path
-export PATH="$PATH:/usr/local/sbin"
+export PATH="/usr/local/bin:$PATH"
 
 # preferred editor
 export EDITOR='vim'
