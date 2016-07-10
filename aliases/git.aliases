@@ -17,3 +17,8 @@ alias gpull="git pull origin master"
 # Branches
 alias gco="git checkout"
 alias gcom="git checkout master"
+
+# Cloning from github
+github() {
+    git clone "https://github.com/$1" $2
+}
