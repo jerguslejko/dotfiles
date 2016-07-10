@@ -4,7 +4,7 @@ alias gs="git status"
 alias gc="git commit -m"
 alias ga="git add"
 alias gaa="git add --all ."
-alias gclone="git clone"
+alias gcl="git clone"
 
 # Logs and diffs
 alias gl="git log --oneline"
