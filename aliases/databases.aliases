@@ -1,6 +1,6 @@
 __env() {
     if [ ! -f .env ]; then
-        echo $default && return
+        echo $2 && return
     fi
 
     # get value from .env
