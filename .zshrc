@@ -17,7 +17,11 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/usr/local/bin:$HOME/.composer/vendor/bin:$PATH"
 
 # preferred editor
-export EDITOR='vim'
+if [[ -n $SSH_CONNECTION ]]; then
+    export EDITOR='vim'
+else
+    export EDITOR='mvim'
+fi
 
 # source aliases
 for file in ~/.zsh/aliases/*; do

@@ -3,6 +3,35 @@ alias art="php artisan --verbose"
 alias tinker="php artisan tinker --verbose"
 alias fresh="php artisan migrate:refresh --seed --verbose"
 
+laranew() {
+    if [ ! $1 ]; then
+        echo "Please, provide a project name." && return
+    fi
+
+    local project=$1;
+
+    # Laravel
+    laravel new $project
+
+    cd $project
+
+    # Git
+    git init
+    git add .
+    git commit -m "Initial commit."
+
+    # Database
+    sed -i '' '/DB_HOST/d; /DB_PORT/d; /DB_DATABASE/d; /DB_USERNAME/d; /DB_PASSWORD/d; /DB_CONNECTION/s/mysql/sqlite/' .env
+    touch database/database.sqlite
+
+    # Browser
+    valet secure $1
+    valet open
+
+    # Editor
+    $EDITOR .
+}
+
 # Node
 alias npm="npm --no-progress"
 
