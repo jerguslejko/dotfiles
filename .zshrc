@@ -4,8 +4,11 @@ export ZSH=~/.oh-my-zsh
 # theme
 ZSH_THEME="cloud"
 
+# highlighting
+source ~/.zsh/highlighting.zsh
+
 # plugins
-plugins=(symfony-console vagrant)
+plugins=(symfony-console vagrant zsh-syntax-highlighting)
 
 # space separated list of symfony tools
 SYMFONY_CONSOLE_TOOLS="composer valet artisan"
@@ -14,7 +17,7 @@ SYMFONY_CONSOLE_TOOLS="composer valet artisan"
 source $ZSH/oh-my-zsh.sh
 
 # path
-export PATH="/usr/local/bin:$HOME/.composer/vendor/bin:$PATH"
+export PATH="/usr/local/sbin:/usr/local/bin:$HOME/.composer/vendor/bin:$PATH"
 
 # preferred editor
 if [[ -n $SSH_CONNECTION ]]; then

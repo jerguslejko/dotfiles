@@ -4,6 +4,7 @@ alias l="ls -lAh"
 alias s="pmset sleepnow"
 alias n="pmset displaysleepnow"
 alias rm="/usr/local/lib/node_modules/osx-trash/trash"
+alias desk="cd ~/Desktop"
 
 # Helpers
 alias hosts="sudo vim /etc/hosts"

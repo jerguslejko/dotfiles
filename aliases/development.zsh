@@ -40,11 +40,6 @@ alias v="vagrant"
 
 # Vim
 alias vi="vim"
-alias ct="ctags -R --exclude=vendor --exclude=node_modules --exclude=bower_components ."
-
-function :e() {
-    mvim -c "cd ${1-.}" "${1-.}"
-}
 
 # Sublime
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
@@ -53,3 +48,8 @@ alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias svn_add="svn st | grep '?' | awk '{print \$2}' | xargs svn add"
 alias svn_rm="svn st | grep '!' | awk '{print \$2}' | xargs svn rm"
 alias svnci="svn_add && svn_rm && svn ci -m"
+
+# Images
+image() {
+    curl "https://unsplash.it/${1-600}/${2-$1}?random" > ${3-image}.jpg
+}
