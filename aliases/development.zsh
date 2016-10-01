@@ -26,10 +26,6 @@ laranew() {
 
     # Browser
     valet secure $1
-    valet open
-
-    # Editor
-    $EDITOR .
 }
 
 # Node
@@ -38,10 +34,8 @@ alias npm="npm --no-progress"
 # Vagrant
 alias v="vagrant"
 
-# Vim
+# Editing
 alias vi="vim"
-
-# Sublime
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
 # SVN
@@ -49,7 +43,13 @@ alias svn_add="svn st | grep '?' | awk '{print \$2}' | xargs svn add"
 alias svn_rm="svn st | grep '!' | awk '{print \$2}' | xargs svn rm"
 alias svnci="svn_add && svn_rm && svn ci -m"
 
+# Testing
+alias phpunit="./vendor/bin/phpunit"
+
 # Images
 image() {
     curl "https://unsplash.it/${1-600}/${2-$1}?random" > ${3-image}.jpg
 }
+
+# Python
+alias py="/usr/local/bin/python3.5"

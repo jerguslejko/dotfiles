@@ -2,19 +2,18 @@
 alias c="clear"
 alias l="ls -lAh"
 alias s="pmset sleepnow"
-alias n="pmset displaysleepnow"
-alias rm="/usr/local/lib/node_modules/osx-trash/trash"
+
+# Movement
 alias desk="cd ~/Desktop"
+alias home="cd ~"
+alias code="cd ~/code"
+
+# Enhanced tools
+alias rm="/usr/local/lib/node_modules/osx-trash/trash"
 
 # Helpers
 alias hosts="sudo vim /etc/hosts"
 alias sshkey="cat ~/.ssh/id_rsa.pub | pbcopy && echo 'Your public SSH key was successfully copied to the clipboard.'"
-
-# Bluetooth & WiFi
-alias bon="blueutil power 1"
-alias boff="blueutil power 0"
-alias won="networksetup -setairportpower en0 on"
-alias woff="networksetup -setairportpower en0 off"
 
 # Network
 ip() {
@@ -27,3 +26,7 @@ ip() {
     echo "Gateway address: $gateway"
 }
 
+# Other
+t() {
+    tree -I '.git|.svn|node_modules|bower_components|vendor|.DS_Store' --dirsfirst -L ${2-3} -aC $1
+}

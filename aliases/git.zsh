@@ -6,6 +6,8 @@ alias ga="git add"
 alias gaa="git add --all ."
 alias gcl="git clone"
 
+alias gnah="git checkout -- . && git clean -fdq"
+
 # Logs and diffs
 alias gl="git log --oneline"
 alias gd="git diff -- . ':!composer.lock'"
