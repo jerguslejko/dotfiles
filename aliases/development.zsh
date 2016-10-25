@@ -3,6 +3,9 @@ alias art="php artisan --verbose"
 alias tinker="php artisan tinker --verbose"
 alias fresh="php artisan migrate:refresh --seed --verbose"
 
+alias log:clear="rm storage/logs/*"
+alias log:view="cat storage/logs/laravel.log"
+
 laranew() {
     if [ ! $1 ]; then
         echo "Please, provide a project name." && return
@@ -39,9 +42,11 @@ alias vi="vim"
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
 # SVN
-alias svn_add="svn st | grep '?' | awk '{print \$2}' | xargs svn add"
-alias svn_rm="svn st | grep '!' | awk '{print \$2}' | xargs svn rm"
-alias svnci="svn_add && svn_rm && svn ci -m"
+alias svn:add="svn st | grep '?' | awk '{print \$2}' | xargs svn add"
+alias svn:rm="svn st | grep '!' | awk '{print \$2}' | xargs svn rm"
+alias svn:ci="svn:add && svn:rm && svn ci -m"
+alias svn:log="svn log -l 5"
+alias svn:diff="svn diff | less"
 
 # Testing
 alias phpunit="./vendor/bin/phpunit"
