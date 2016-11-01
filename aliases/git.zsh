@@ -4,8 +4,8 @@ alias gs="git status"
 alias gc="git commit -m"
 alias ga="git add"
 alias gaa="git add --all ."
-alias gcl="git clone"
 
+alias gam="git commit --amend"
 alias gnah="git checkout -- . && git clean -fdq"
 
 # Logs and diffs
@@ -13,8 +13,8 @@ alias gl="git log --oneline"
 alias gd="git diff -- . ':!composer.lock'"
 
 # Remote
-alias gpush="git push origin master"
-alias gpull="git pull origin master"
+alias gpush="git push"
+alias gpull="git pull"
 
 # Branches
 alias gco="git checkout"

@@ -1,11 +1,9 @@
 # General
 alias c="clear"
 alias l="ls -lAh"
-alias s="pmset sleepnow"
 
 # Movement
 alias desk="cd ~/Desktop"
-alias home="cd ~"
 alias code="cd ~/code"
 
 # Enhanced tools

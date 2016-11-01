@@ -17,7 +17,7 @@ SYMFONY_CONSOLE_TOOLS="composer valet artisan"
 source $ZSH/oh-my-zsh.sh
 
 # path
-export PATH="/usr/local/sbin:/usr/local/bin:$HOME/.composer/vendor/bin:$PATH"
+export PATH="/usr/local/sbin:$HOME/.composer/vendor/bin:$PATH"
 
 # preferred editor
 if [[ -n $SSH_CONNECTION ]]; then

@@ -1,6 +1,6 @@
 # Laravel
 alias art="php artisan --verbose"
-alias tinker="php artisan tinker --verbose"
+alias tink="php artisan tinker --verbose"
 alias fresh="php artisan migrate:refresh --seed --verbose"
 
 alias log:clear="rm storage/logs/*"
