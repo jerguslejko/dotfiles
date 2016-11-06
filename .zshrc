@@ -17,7 +17,7 @@ SYMFONY_CONSOLE_TOOLS="composer valet artisan"
 source $ZSH/oh-my-zsh.sh
 
 # path
-export PATH="/usr/local/sbin:$HOME/.composer/vendor/bin:$PATH"
+export PATH="/usr/local/bin:/usr/local/sbin:$HOME/.composer/vendor/bin:$PATH"
 
 # preferred editor
 if [[ -n $SSH_CONNECTION ]]; then
@@ -30,3 +30,5 @@ fi
 for file in ~/.zsh/aliases/*; do
     source "$file"
 done
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

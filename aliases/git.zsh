@@ -5,6 +5,8 @@ alias gc="git commit -m"
 alias ga="git add"
 alias gaa="git add --all ."
 
+alias gr="git rebase"
+alias gb="git branch"
 alias gam="git commit --amend"
 alias gnah="git checkout -- . && git clean -fdq"
 
@@ -22,5 +24,5 @@ alias gcom="git checkout master"
 
 # Cloning from github
 github() {
-    git clone "https://github.com/$1" $2
+    git clone "git@github.com:$1.git" $2
 }
