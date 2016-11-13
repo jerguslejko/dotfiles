@@ -7,7 +7,8 @@ alias gaa="git add --all ."
 
 alias gr="git rebase"
 alias gb="git branch"
-alias gam="git commit --amend"
+alias gam="git commit --amend --no-edit"
+alias gamm="git commit --amend"
 alias gnah="git checkout -- . && git clean -fdq"
 
 # Logs and diffs
