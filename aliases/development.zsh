@@ -1,45 +1,15 @@
 # Laravel
 alias art="php artisan --verbose"
 alias tink="php artisan tinker --verbose"
-alias fresh="php artisan migrate:refresh --seed --verbose"
-
+alias fresh="php artisan migrate:refresh --seed --verbose && log:clear"
 alias log:clear="rm storage/logs/*"
 alias log:view="cat storage/logs/laravel.log"
-
-laranew() {
-    if [ ! $1 ]; then
-        echo "Please, provide a project name." && return
-    fi
-
-    local project=$1;
-
-    # Laravel
-    laravel new $project
-
-    cd $project
-
-    # Git
-    git init
-    git add .
-    git commit -m "Initial commit."
-
-    # Database
-    sed -i '' '/DB_HOST/d; /DB_PORT/d; /DB_DATABASE/d; /DB_USERNAME/d; /DB_PASSWORD/d; /DB_CONNECTION/s/mysql/sqlite/' .env
-    touch database/database.sqlite
-
-    # Browser
-    valet secure $1
-}
-
-# Node
-alias npm="npm --no-progress"
 
 # Vagrant
 alias v="vagrant"
 
 # Editing
 alias vi="vim"
-alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
 # SVN
 alias svn:add="svn st | grep '?' | awk '{print \$2}' | xargs svn add"
