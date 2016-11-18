@@ -20,15 +20,9 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/usr/local/bin:/usr/local/sbin:$HOME/.composer/vendor/bin:$PATH"
 
 # preferred editor
-if [[ -n $SSH_CONNECTION ]]; then
-    export EDITOR='vim'
-else
-    export EDITOR='subl'
-fi
+export EDITOR='vim'
 
 # source aliases
 for file in ~/.zsh/aliases/*; do
     source "$file"
 done
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
