@@ -1,25 +1,15 @@
 # Laravel
 alias art="php artisan --verbose"
 alias tink="php artisan tinker --verbose"
-alias fresh="php artisan migrate:refresh --seed --verbose && log:clear"
+alias fresh="php artisan migrate:refresh --seed --verbose"
 alias log:clear="rm storage/logs/*"
 alias log:view="cat storage/logs/laravel.log"
 
-# Vagrant
-alias v="vagrant"
-
-# Editing
-alias vi="vim"
-
-# SVN
-alias svn:add="svn st | grep '?' | awk '{print \$2}' | xargs svn add"
-alias svn:rm="svn st | grep '!' | awk '{print \$2}' | xargs svn rm"
-alias svn:ci="svn:add && svn:rm && svn ci -m"
-alias svn:log="svn log -l 5"
-alias svn:diff="svn diff | less"
-
-# Testing
+# Tools
 alias phpunit="./vendor/bin/phpunit"
+alias codecept="./vendor/bin/codecept"
+alias eslint="./node_modules/.bin/eslint"
+alias webpack="./node_modules/.bin/webpack"
 
 # Images
 image() {
@@ -27,4 +17,4 @@ image() {
 }
 
 # Python
-alias py="/usr/local/bin/python3.5"
+alias py="python3.5"

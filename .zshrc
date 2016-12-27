@@ -8,7 +8,7 @@ ZSH_THEME="cloud"
 source ~/.zsh/highlighting.zsh
 
 # plugins
-plugins=(symfony-console vagrant zsh-syntax-highlighting)
+plugins=(symfony-console zsh-syntax-highlighting)
 
 # space separated list of symfony tools
 SYMFONY_CONSOLE_TOOLS="composer valet artisan"
@@ -17,7 +17,7 @@ SYMFONY_CONSOLE_TOOLS="composer valet artisan"
 source $ZSH/oh-my-zsh.sh
 
 # path
-export PATH="/usr/local/bin:/usr/local/sbin:$HOME/.composer/vendor/bin:$PATH"
+export PATH="/usr/local/bin:/usr/local/sbin:$HOME/.composer/vendor/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # preferred editor
 export EDITOR='vim'
