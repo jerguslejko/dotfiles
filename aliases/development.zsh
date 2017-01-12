@@ -17,4 +17,4 @@ image() {
 }
 
 # Python
-alias py="python3.5"
+alias py="python3"

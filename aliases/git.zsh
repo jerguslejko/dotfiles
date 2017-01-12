@@ -6,6 +6,7 @@ alias gc="git commit -m"
 alias ga="git add"
 alias gaa="git add --all ."
 alias gwip="git add . && git commit -m 'wip'"
+alias glast="git reset HEAD~"
 
 alias gam="git commit --amend --no-edit"
 alias gamm="git commit --amend"

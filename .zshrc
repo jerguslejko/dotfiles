@@ -8,7 +8,7 @@ ZSH_THEME="cloud"
 source ~/.zsh/highlighting.zsh
 
 # plugins
-plugins=(symfony-console zsh-syntax-highlighting)
+plugins=(symfony-console zsh-syntax-highlighting yarn)
 
 # space separated list of symfony tools
 SYMFONY_CONSOLE_TOOLS="composer valet artisan"
