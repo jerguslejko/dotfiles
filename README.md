@@ -21,5 +21,3 @@ ln -s ~/.zsh/.zshrc ~/.zshrc
 ```
 
 4. Reload your shell
-
-> Jergus Lejko <jergus.lejko@gmail.com> 2016
