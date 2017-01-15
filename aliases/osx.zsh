@@ -7,7 +7,7 @@ alias desk="cd ~/Desktop"
 alias code="cd ~/code"
 
 # Tools
-alias rm="/usr/local/lib/node_modules/osx-trash/trash"
+alias rm="/usr/local/bin/trash"
 
 # Helpers
 alias sshkey="cat ~/.ssh/id_rsa.pub | pbcopy && echo 'Your public SSH key was successfully copied to the clipboard.'"
