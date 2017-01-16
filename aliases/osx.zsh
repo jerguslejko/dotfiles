@@ -1,6 +1,7 @@
 # General
 alias c="clear"
 alias l="ls -lAh"
+alias -g @="| grep"
 
 # Movement
 alias desk="cd ~/Desktop"
