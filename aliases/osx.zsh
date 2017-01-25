@@ -8,6 +8,7 @@ alias desk="cd ~/Desktop"
 alias code="cd ~/code"
 
 # Tools
+alias b="brew"
 alias rm="/usr/local/bin/trash"
 
 # Helpers
