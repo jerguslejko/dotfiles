@@ -6,6 +6,8 @@ alias -g @="| grep"
 # Movement
 alias desk="cd ~/Desktop"
 alias code="cd ~/code"
+alias down="cd ~/Downloads"
+alias docs="cd ~/Documents"
 
 # Tools
 alias b="brew"

@@ -14,10 +14,9 @@ alias gnah="git reset --quiet HEAD . && git checkout -- . && git clean -fdq"
 
 # Logs and diffs
 alias gl="git log --oneline"
-alias gd="git diff HEAD -- . ':!composer.lock' ':!yarn.lock'"
+alias gd="git diff -- . ':!*.lock'"
 
 # Branches
 alias gb="git branch"
-alias gr="git rebase"
 alias gco="git checkout"
 alias gcom="git checkout master"
