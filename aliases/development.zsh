@@ -4,6 +4,7 @@ alias tink="[[ -f ./artisan ]] && php artisan tinker --verbose || psysh"
 alias fresh="php artisan migrate:refresh --seed --verbose"
 alias log:clear="rm storage/logs/*"
 alias log:view="cat storage/logs/laravel.log"
+alias log:watch="tail -f storage/logs/laravel.log"
 
 # Tools
 alias phpunit="./vendor/bin/phpunit"
