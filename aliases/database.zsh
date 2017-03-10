@@ -4,7 +4,7 @@ __env() {
     fi
 
     # get value from .env
-    local value=$(cat .env | grep "$1=" | sed "s/$1=//")
+    local value=$(cat .env | grep --invert-match "^\s*#" | grep "$1=" | sed "s/$1=//")
 
     # return value or default
     echo $([[ "$value" ]] && echo "$value" || echo "$2")
