@@ -2,6 +2,8 @@
 alias c="clear"
 alias l="ls -lAh"
 alias -g @="| grep"
+alias _="sudo"
+alias __='sudo $(fc -ln -1)'
 
 # Other
 t() {
