@@ -16,7 +16,7 @@ __mysqlCompose() {
 
 __mysql() {
     if [[ $1 ]]; then
-        eval "$(__mysqlCompose) --database='$(__env DB_DATABASE)' --execute='select * from $1'" && return
+        eval "$(__mysqlCompose) --database='$(__env DB_DATABASE)' --execute='select * from \`$1\`'" && return
     fi
 
     eval "$(__mysqlCompose) --database='$(__env DB_DATABASE)'"
@@ -24,7 +24,7 @@ __mysql() {
 
 __sqlite() {
     if [[ $1 ]]; then
-        eval "sqlite3 database/database.sqlite 'select * from $1'" && return
+        eval "sqlite3 database/database.sqlite 'select * from \`$1\`'" && return
     fi
 
     eval "sqlite3 database/database.sqlite"
@@ -38,11 +38,11 @@ db() {
 }
 
 mkdb() {
-    eval "$(__mysqlCompose) --execute='create database $1'"
+    eval "$(__mysqlCompose) --execute='create database \`$1\`'"
 }
 
 dropdb() {
-    eval "$(__mysqlCompose) --execute='drop database $1'"
+    eval "$(__mysqlCompose) --execute='drop database \`$1\`'"
 }
 
 freshdb() {
