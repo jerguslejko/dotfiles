@@ -2,7 +2,7 @@
 export ZSH=~/.oh-my-zsh
 
 # theme
-ZSH_THEME="cloud"
+ZSH_THEME="robbyrussell"
 
 # highlighting
 source ~/.zsh/highlighting.zsh
