@@ -11,7 +11,7 @@ __env() {
 }
 
 __mysqlCompose() {
-    echo "mysql --user="$(__env DB_USERNAME root)" --password="$(__env DB_PASSWORD secret)""
+    echo "mysql --user="$(__env DB_USERNAME 'root')" --password="$(__env DB_PASSWORD 'secret')""
 }
 
 __mysql() {
