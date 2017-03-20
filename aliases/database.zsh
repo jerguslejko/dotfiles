@@ -38,11 +38,17 @@ db() {
 }
 
 mkdb() {
-    eval "$(__mysqlCompose) --execute='create database \`$1\`'"
+    case $(__env DB_CONNECTION 'mysql') in
+        (mysql) eval "$(__mysqlCompose) --execute='create database \`$1\`'" ;;
+        (sqlite) eval "touch database/database.sqlite" ;;
+    esac
 }
 
 dropdb() {
-    eval "$(__mysqlCompose) --execute='drop database \`$1\`'"
+    case $(__env DB_CONNECTION 'mysql') in
+        (mysql) eval "$(__mysqlCompose) --execute='drop database \`$1\`'" ;;
+        (sqlite) eval "rm database/database.sqlite" ;;
+    esac
 }
 
 freshdb() {
