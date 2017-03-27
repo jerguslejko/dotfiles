@@ -1,13 +1,16 @@
 # Laravel
 alias art="php artisan --verbose"
-alias dusk="php artisan dusk"
-alias tink="[[ -f ./artisan ]] && php artisan tinker --verbose || psysh"
 alias fresh="php artisan migrate:refresh --seed --verbose"
+
+alias tink="[[ -f ./artisan ]] && php artisan tinker --verbose || psysh"
+
+# Logs
 alias log:clear="rm storage/logs/*"
 alias log:view="cat storage/logs/laravel.log"
 alias log:watch="tail -f storage/logs/laravel.log"
 
 # Tools
+alias dusk="php artisan dusk"
 alias phpunit="./vendor/bin/phpunit"
 
 # Images
