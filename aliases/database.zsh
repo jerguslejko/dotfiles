@@ -1,6 +1,6 @@
 __env() {
     if [ ! -f .env ]; then
-        echo $2 && return
+        echo "$2" && return
     fi
 
     # get value from .env
@@ -11,7 +11,7 @@ __env() {
 }
 
 __mysqlCompose() {
-    echo "mysql --user="$(__env DB_USERNAME 'root')" --password="$(__env DB_PASSWORD 'secret')""
+    echo "mysql --user=\"$(__env DB_USERNAME 'root')\" --password=\"$(__env DB_PASSWORD 'secret')\""
 }
 
 __mysql() {
@@ -32,8 +32,8 @@ __sqlite() {
 
 db() {
     case $(__env DB_CONNECTION 'mysql') in
-        (mysql) __mysql $1 ;;
-        (sqlite) __sqlite $1 ;;
+        (mysql) __mysql "$1" ;;
+        (sqlite) __sqlite "$1" ;;
     esac
 }
 
@@ -52,5 +52,5 @@ dropdb() {
 }
 
 freshdb() {
-    dropdb $1 && mkdb $1
+    dropdb "$1" && mkdb "$1"
 }
