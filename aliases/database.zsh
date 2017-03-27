@@ -1,13 +1,18 @@
 __env() {
-    if [ ! -f .env ]; then
-        echo "$2" && return
+    local key=$1
+    local default=$2
+    local value
+
+    # return default if .env file does not exist
+    if [[ ! -f .env ]]; then
+        echo "$default" && return
     fi
 
     # get value from .env
-    local value=$(cat .env | grep --invert-match "^\s*#" | grep "$1=" | sed "s/$1=//")
+    value=$(grep --invert-match "^\s*#" .env | grep "$key=" | sed "s/$key=//")
 
     # return value or default
-    echo $([[ "$value" ]] && echo "$value" || echo "$2")
+    [[ "$value" ]] && echo "$value" || echo "$default"
 }
 
 __mysqlCompose() {
