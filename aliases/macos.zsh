@@ -1,8 +1,8 @@
 # Movement
+alias code="cd ~/Code"
 alias desk="cd ~/Desktop"
-alias code="cd ~/code"
-alias down="cd ~/Downloads"
 alias docs="cd ~/Documents"
+alias down="cd ~/Downloads"
 
 # Tools
 alias b="brew"
