@@ -2,6 +2,7 @@
 alias c="clear"
 alias l="ls -lAh"
 alias -g @="| grep"
+alias sudo="sudo " # this enables running aliases with sudo
 alias _="sudo"
 alias __='sudo $(fc -ln -1)'
 
