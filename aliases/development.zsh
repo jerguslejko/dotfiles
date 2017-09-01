@@ -12,6 +12,7 @@ alias log:watch="tail -f storage/logs/laravel.log"
 # Tools
 alias dusk="php artisan dusk"
 alias phpunit="./vendor/bin/phpunit"
+alias pf="./vendor/bin/phpunit --filter"
 
 # Images
 image() {
