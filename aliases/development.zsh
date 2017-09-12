@@ -1,6 +1,6 @@
 # Laravel
 alias art="php artisan --verbose"
-alias fresh="php artisan migrate:refresh --seed --verbose"
+alias fresh="php artisan migrate:fresh --seed --verbose"
 
 alias tink="[[ -f ./artisan ]] && php artisan tinker --verbose || psysh"
 

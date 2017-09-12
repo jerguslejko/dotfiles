@@ -14,4 +14,3 @@ alias flushdns="sudo killall -HUP mDNSResponder"
 
 # Blog
 alias j="jekyll"
-alias blog="cd ~/Blog"
