@@ -1,9 +1,6 @@
 # path to oh-my-zsh
 export ZSH=~/.oh-my-zsh
 
-# theme
-ZSH_THEME="norm"
-
 # highlighting
 source ~/.zsh/highlighting.zsh
 
@@ -31,3 +28,9 @@ for file in ~/.zsh/aliases/*; do
 
     source "$file"
 done
+
+# custom theme
+PROMPT='%{$fg[yellow]%} %{$fg[green]%}%c %{$fg[yellow]%}→ $(git_prompt_info)%{$reset_color%}'
+
+ZSH_THEME_GIT_PROMPT_PREFIX="git:(%{$fg[red]%}"
+ZSH_THEME_GIT_PROMPT_SUFFIX="%{$fg[yellow]%}) %{$reset_color%}"
