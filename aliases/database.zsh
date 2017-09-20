@@ -27,33 +27,16 @@ __mysql() {
     eval "$(__mysqlCompose) --database='$(__env DB_DATABASE)'"
 }
 
-__sqlite() {
-    if [[ $1 ]]; then
-        eval "sqlite3 database/database.sqlite 'select * from \`$1\`'" && return
-    fi
-
-    eval "sqlite3 database/database.sqlite"
-}
-
 db() {
-    case $(__env DB_CONNECTION 'mysql') in
-        (mysql) __mysql "$1" ;;
-        (sqlite) __sqlite "$1" ;;
-    esac
+    __mysql "$1"
 }
 
 mkdb() {
-    case $(__env DB_CONNECTION 'mysql') in
-        (mysql) eval "$(__mysqlCompose) --execute='create database \`$1\`'" ;;
-        (sqlite) eval "touch database/database.sqlite" ;;
-    esac
+    eval "$(__mysqlCompose) --execute='create database \`$1\`'"
 }
 
 dropdb() {
-    case $(__env DB_CONNECTION 'mysql') in
-        (mysql) eval "$(__mysqlCompose) --execute='drop database \`$1\`'" ;;
-        (sqlite) eval "rm database/database.sqlite" ;;
-    esac
+    eval "$(__mysqlCompose) --execute='drop database \`$1\`'"
 }
 
 freshdb() {
