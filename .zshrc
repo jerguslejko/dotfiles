@@ -5,7 +5,7 @@ export ZSH=~/.oh-my-zsh
 source ~/.zsh/highlighting.zsh
 
 # plugins
-plugins=(symfony-console zsh-syntax-highlighting yarn)
+plugins=(symfony-console zsh-syntax-highlighting yarn docker)
 
 # space separated list of symfony tools
 SYMFONY_CONSOLE_TOOLS="composer valet artisan"
