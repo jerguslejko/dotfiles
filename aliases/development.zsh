@@ -18,3 +18,6 @@ alias pf="./vendor/bin/phpunit --filter"
 image() {
     curl "https://unsplash.it/${1-600}/${2-$1}?random" > ${3-image}.jpg
 }
+
+# Others
+alias d=docker
