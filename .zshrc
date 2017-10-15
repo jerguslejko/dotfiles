@@ -7,9 +7,6 @@ source ~/.zsh/highlighting.zsh
 # plugins
 plugins=(symfony-console zsh-syntax-highlighting yarn docker)
 
-# space separated list of symfony tools
-SYMFONY_CONSOLE_TOOLS="composer valet artisan envoy"
-
 # bootstrap oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
