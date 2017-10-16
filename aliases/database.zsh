@@ -3,16 +3,21 @@ __env() {
     local default=$2
     local value
 
-    # return default if .env file does not exist
     if [[ ! -f .env ]]; then
+        echo "__env: File .env does not exist" && return
+    fi
+
+    if [[ ! "$key" ]]; then
+        echo "usage: __env key [default_value]" && return 1
+    fi
+
+    value=$(grep --invert-match "^\s*#" .env | grep "$key=")
+
+    if [[ ! "$value" ]]; then
         echo "$default" && return
     fi
 
-    # get value from .env
-    value=$(grep --invert-match "^\s*#" .env | grep "$key=" | sed "s/$key=//")
-
-    # return value or default
-    [[ "$value" ]] && echo "$value" || echo "$default"
+    echo $value | sed "s/$key=//"
 }
 
 __mysqlCompose() {
