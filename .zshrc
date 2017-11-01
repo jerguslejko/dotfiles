@@ -14,7 +14,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/usr/local/bin:/usr/local/sbin:$HOME/.composer/vendor/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # preferred editor
-export EDITOR='vim'
+export EDITOR="vim"
 
 # source aliases
 for file in ~/.zsh/aliases/*; do
