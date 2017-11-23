@@ -36,6 +36,10 @@ db() {
     __mysql "$1"
 }
 
+dbs() {
+    eval "$(__mysqlCompose) --database='$(__env DB_DATABASE)' --execute='describe \`$1\`'"
+}
+
 mkdb() {
     eval "$(__mysqlCompose) --execute='create database \`$1\`'"
 }
