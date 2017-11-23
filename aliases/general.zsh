@@ -8,5 +8,5 @@ alias __='sudo $(fc -ln -1)'
 
 # Other
 t() {
-    tree -I '.git|.svn|.DS_Store|node_modules|vendor' --dirsfirst -L ${2-3} -aC $1
+    tree -I '.git|.svn|.DS_Store|node_modules|vendor' --dirsfirst -L "${2-3}" -aC "${1-.}"
 }

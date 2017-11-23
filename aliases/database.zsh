@@ -17,7 +17,7 @@ __env() {
         echo "$default" && return
     fi
 
-    echo $value | sed "s/$key=//"
+    echo "${value//$key=/}"
 }
 
 __mysqlCompose() {
