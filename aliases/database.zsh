@@ -4,7 +4,7 @@ __env() {
     local value
 
     if [[ ! -f .env ]]; then
-        echo "__env: File .env does not exist" && return
+        echo "$default" && return
     fi
 
     if [[ ! "$key" ]]; then
