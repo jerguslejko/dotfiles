@@ -5,7 +5,7 @@
 1. Clone the repository into `~/.dotfiles` directory
 
     ```
-    git clone https://github.com/jerguslejko/zsh-setup.git ~/.dotfiles
+    git clone https://github.com/jerguslejko/dotfiles.git ~/.dotfiles
     ```
     
 1. Install _ZSH Symfony Console Completion_ plugin (https://github.com/jerguslejko/zsh-symfony-completion)
