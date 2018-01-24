@@ -5,7 +5,7 @@ export ZSH=~/.oh-my-zsh
 source ~/.zsh/highlighting.zsh
 
 # plugins
-plugins=(symfony-console zsh-syntax-highlighting yarn docker)
+plugins=(symfony-console zsh-syntax-highlighting yarn docker alias-tips)
 
 # bootstrap oh-my-zsh
 source $ZSH/oh-my-zsh.sh
