@@ -5,7 +5,7 @@ alias gs="git status"
 alias gc="git commit -m"
 alias ga="git add"
 alias gaa="git add --all ."
-alias gwip="git add --all . && git commit -m 'wip'"
+alias gwip="git add --all . && git commit -m 'WIP'"
 
 alias gr="git rebase"
 
