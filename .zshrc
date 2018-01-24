@@ -2,7 +2,7 @@
 export ZSH=~/.oh-my-zsh
 
 # highlighting
-source ~/.zsh/highlighting.zsh
+source ~/.dotfiles/highlighting.zsh
 
 # plugins
 plugins=(symfony-console zsh-syntax-highlighting yarn docker alias-tips)
@@ -17,7 +17,7 @@ export PATH="/usr/local/bin:/usr/local/sbin:$HOME/.composer/vendor/bin:$HOME/.co
 export EDITOR="vim"
 
 # source aliases
-for file in ~/.zsh/aliases/*; do
+for file in ~/.dotfiles/aliases/*; do
     # only load macos.zsh on macOS
     if [[ "$file" == *macos.zsh && $(uname) != "Darwin" ]]; then
         continue
