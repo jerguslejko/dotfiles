@@ -2,10 +2,10 @@
 
 ## Instalation
 
-1. Clone the repository into `~/.zsh` directory
+1. Clone the repository into `~/.dotfiles` directory
 
     ```
-    git clone https://github.com/jerguslejko/zsh-setup.git ~/.zsh
+    git clone https://github.com/jerguslejko/zsh-setup.git ~/.dotfiles
     ```
     
 1. Install _ZSH Symfony Console Completion_ plugin (https://github.com/jerguslejko/zsh-symfony-completion)
@@ -23,7 +23,7 @@
 1. Create a symbolic link to the `.zshrc`
 
     ```
-    ln -s ~/.zsh/.zshrc ~/.zshrc
+    ln -s ~/.dotfiles/.zshrc ~/.zshrc
     ```
     
 1. Reload your shell
