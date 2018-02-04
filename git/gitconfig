@@ -1,0 +1,9 @@
+[user]
+    name = Jergus Lejko
+    email = jergus.lejko@gmail.com
+[core]
+    excludesfile = /Users/jergus/.gitignore
+    ignorecase = false
+[alias]
+    ignorefile = "!echo '*\n!.gitignore'"
+    sweep = "! f() { git branch -r --merged | grep \"$1/\" | grep -v master | sed \"s|$1/||\" | xargs -n 1 git push --delete \"$1\" ; }; f"
