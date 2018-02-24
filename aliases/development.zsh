@@ -6,7 +6,7 @@ alias tink="[[ -f ./artisan ]] && php artisan tinker --verbose || psysh"
 alias dusk="php artisan dusk"
 alias phpunit="./vendor/bin/phpunit"
 alias pf="./vendor/bin/phpunit --filter"
-alias p="phpunit"
+alias p="phpunit --stop-on-fail"
 
 # Others
 alias d=docker
