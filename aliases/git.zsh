@@ -1,5 +1,5 @@
 # General
-alias g="git"
+alias g="hub"
 
 alias gs="git status"
 alias gc="git commit -m"
