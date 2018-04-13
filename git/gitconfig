@@ -5,10 +5,5 @@
     ignorecase = false
     excludesfile = /Users/jergus/.gitignore
 [alias]
-    sweep = "! f() { git branch -r --merged | grep \"$1/\" | grep -v master | sed \"s|$1/||\" | xargs -n 1 git push --delete \"$1\" ; }; f"
     undo = "reset head~"
-[filter "lfs"]
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
+    sweep = "! f() { git branch -r --merged | grep \"$1/\" | grep -v master | sed \"s|$1/||\" | xargs -n 1 git push --delete \"$1\" ; }; f"
