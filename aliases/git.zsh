@@ -8,6 +8,7 @@ alias gaa="git add --all ."
 alias gwip="git add --all . && git commit -m 'WIP'"
 
 alias gr="git rebase"
+alias grm="git rebase master"
 
 alias gam="git commit --amend --no-edit"
 alias gamm="git commit --amend"
