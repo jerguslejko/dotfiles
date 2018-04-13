@@ -7,6 +7,6 @@ alias _="sudo"
 
 # Other
 t() {
-    tree -I '.git|.DS_Store|node_modules|vendor' --dirsfirst -L "${2-3}" -aC "${1-.}"
+    tree -I '.git|.DS_Store|node_modules|vendor' --dirsfirst -L "${2-100}" -aC "${1-.}"
 }
 
