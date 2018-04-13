@@ -1,11 +1,14 @@
 [user]
     name = jerguslejko
     email = jergus.lejko@gmail.com
+
 [core]
     ignorecase = false
     excludesfile = ~/.gitignore
     attributesfile = ~/.gitattributes
+
 [alias]
     undo = "reset head~"
+
 [diff "nodiff"]
     command = /usr/bin/true
