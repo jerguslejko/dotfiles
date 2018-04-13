@@ -17,7 +17,7 @@ alias gnah="git reset --quiet HEAD . && git checkout -- . && git clean -fdq"
 
 # Logs and diffs
 alias gl="git log --oneline"
-alias gd="git diff -- . ':!*.lock'"
+alias gd="git diff"
 
 # Branches
 alias gb="git branch"
