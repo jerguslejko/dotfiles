@@ -24,8 +24,10 @@
 
     ```
     ln -s ~/.dotfiles/.zshrc ~/.zshrc
-    ln -s ~/.dotfiles/git/gitconfig ~/.gitconfig
-    ln -s ~/.dotfiles/git/gitignore ~/.gitignore
+    ln -s ~/.dotfiles/.zshenv ~/.zshenv
+    ln -s ~/.dotfiles/git/config ~/.gitconfig
+    ln -s ~/.dotfiles/git/ignore ~/.gitignore
+    ln -s ~/.dotfiles/git/attributes ~/.gitattributes
     ```
 
 1. Reload your shell
