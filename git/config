@@ -1,6 +1,6 @@
 [user]
-    name = jerguslejko
-    email = jergus.lejko@gmail.com
+	name = jerguslejko
+	email = jergus.lejko@gmail.com
 
 [core]
     ignorecase = false
@@ -12,3 +12,8 @@
 
 [diff "nodiff"]
     command = /usr/bin/true
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
