@@ -8,7 +8,7 @@
     attributesfile = ~/.gitattributes
 
 [alias]
-    undo = "reset head~"
+    undo = "reset HEAD~"
 
 [diff "nodiff"]
     command = /usr/bin/true
