@@ -15,12 +15,12 @@
 1. Create symbolic links
 
     ```shell
-    ln -s ~/.dotfiles/.zshrc ~/.zshrc
-    ln -s ~/.dotfiles/.zshenv ~/.zshenv
-    ln -s ~/.dotfiles/vim/vimrc ~/.vimrc
-    ln -s ~/.dotfiles/git/config ~/.gitconfig
-    ln -s ~/.dotfiles/git/ignore ~/.gitignore
-    ln -s ~/.dotfiles/git/attributes ~/.gitattributes
+    ln -sf ~/.dotfiles/.zshrc ~/.zshrc
+    ln -sf ~/.dotfiles/.zshenv ~/.zshenv
+    ln -sf ~/.dotfiles/vim/vimrc ~/.vimrc
+    ln -sf ~/.dotfiles/git/config ~/.gitconfig
+    ln -sf ~/.dotfiles/git/ignore ~/.gitignore
+    ln -sf ~/.dotfiles/git/attributes ~/.gitattributes
     ```
 
 1. Install oh-my-zsh plugins
@@ -33,7 +33,7 @@
 1. Install vim plugins
 
     ```shell
-    mkdir ~/.vim/{bundle,backup,swap}
+    mkdir -p ~/.vim/{bundle,backup,swap}
     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
     vim +PluginInstall +qall
     ```
