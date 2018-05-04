@@ -1,39 +1,38 @@
-# (Oh My) ZSH setup
+# My .dotfiles
 
-## Instalation
+1. Install oh-my-zsh
 
-1. Clone the repository into `~/.dotfiles` directory
-
+    ```shell
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
     ```
+
+1. Clone the repository into `~/.dotfiles`
+
+    ```shell
     git clone https://github.com/jerguslejko/dotfiles.git ~/.dotfiles
     ```
 
-1. Install _ZSH Symfony Console Completion_ plugin (https://github.com/jerguslejko/zsh-symfony-completion)
+1. Create symbolic links
 
-    ```
-    git clone https://github.com/jerguslejko/zsh-symfony-completion.git ~/.oh-my-zsh/custom/plugins/symfony-console
-    ```
-
-1. Install _zsh-syntax-highlighting_ (https://github.com/zsh-users/zsh-syntax-highlighting)
-
-    ```
-    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-    ```
-
-1. Create a symbolic links
-
-    ```
+    ```shell
     ln -s ~/.dotfiles/.zshrc ~/.zshrc
     ln -s ~/.dotfiles/.zshenv ~/.zshenv
+    ln -s ~/.dotfiles/vim/vimrc ~/.vimrc
     ln -s ~/.dotfiles/git/config ~/.gitconfig
     ln -s ~/.dotfiles/git/ignore ~/.gitignore
     ln -s ~/.dotfiles/git/attributes ~/.gitattributes
-    ln -s ~/.dotfiles/vim/vimrc ~/.vimrc
     ```
 
-1. Vim-specific setup
+1. Install oh-my-zsh plugins
 
+    ```shell
+    git clone https://github.com/jerguslejko/zsh-symfony-completion.git ~/.oh-my-zsh/custom/plugins/symfony-console
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
     ```
+
+1. Install vim plugins
+
+    ```shell
     mkdir ~/.vim/{bundle,backup,swap}
     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
     vim +PluginInstall +qall
