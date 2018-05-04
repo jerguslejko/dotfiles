@@ -37,5 +37,10 @@
     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
     vim +PluginInstall +qall
     ```
+1. Hush login
+
+    ```shell
+    touch ~/.hushlogin
+    ```
 
 1. Reload your shell
