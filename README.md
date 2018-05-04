@@ -1,5 +1,27 @@
 # My .dotfiles
 
+## Pre-setup - macOS only
+   
+1. Install Homebrew
+
+    ```shell
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    ```
+    
+1. Install additional tools
+
+    ```shell
+    brew install zsh vim git trash composer node yarn mysql
+    ```
+
+1. Install global composer packages
+
+    ```shell
+    composer global require laravel/valet laravel/installer laravel/envoy psy/psysh
+    ```
+
+## Installation 
+
 1. Install oh-my-zsh
 
     ```shell
@@ -37,10 +59,11 @@
     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
     vim +PluginInstall +qall
     ```
+
 1. Hush login
 
     ```shell
     touch ~/.hushlogin
     ```
-
+    
 1. Reload your shell
