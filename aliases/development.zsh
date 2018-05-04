@@ -10,4 +10,5 @@ alias p="phpunit --stop-on-fail"
 
 # Others
 alias d=docker
+alias y=yarn
 alias vs="/usr/local/bin/code"
