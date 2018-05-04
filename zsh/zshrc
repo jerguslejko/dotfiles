@@ -2,7 +2,7 @@
 export ZSH=~/.oh-my-zsh
 
 # highlighting
-source ~/.dotfiles/highlighting.zsh
+source ~/.dotfiles/zsh/highlighting.zsh
 
 # plugins
 plugins=(symfony-console zsh-syntax-highlighting docker alias-tips)

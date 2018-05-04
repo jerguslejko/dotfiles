@@ -15,9 +15,9 @@
 1. Create symbolic links
 
     ```shell
-    ln -sf ~/.dotfiles/.zshrc ~/.zshrc
-    ln -sf ~/.dotfiles/.zshenv ~/.zshenv
     ln -sf ~/.dotfiles/vim/vimrc ~/.vimrc
+    ln -sf ~/.dotfiles/zsh/zshrc ~/.zshrc
+    ln -sf ~/.dotfiles/zsh/zshenv ~/.zshenv
     ln -sf ~/.dotfiles/git/config ~/.gitconfig
     ln -sf ~/.dotfiles/git/ignore ~/.gitignore
     ln -sf ~/.dotfiles/git/attributes ~/.gitattributes
