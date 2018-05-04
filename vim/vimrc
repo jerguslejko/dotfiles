@@ -1,0 +1,89 @@
+syntax enable                                                           "Enable syntax highlighting
+
+so ~/.dotfiles/vim/plugins.vim                                                   "Load plugins
+
+let mapleader = ','                                                     "Set <Leader> key
+
+set nocompatible                                                        "Force VIM to behave 'normally'
+set textwidth=0                                                         "Set hard-limit for line length
+set backspace=indent,eol,start                                          "Make backspace work 'normally'
+set relativenumber                                                      "Turn on relative line numbers
+set tabstop=4 shiftwidth=4 softtabstop=4 expandtab                      "Make tabs work 'normally'
+set ic                                                                  "Make searching case-insensitve
+set noerrorbells visualbell t_vb=                                       "Turn off all bells
+set autoread                                                            "Make vim autoload new changes to a file
+set nofoldenable                                                        "Disable folds
+
+"Swap files out of the project root
+set backupdir=~/.vim/backup//
+set directory=~/.vim/swap//
+set viminfo+=n~/.vim/.viminfo
+
+"----------------Mappings----------------
+"Save readonly files
+cmap w!! w !sudo tee % >/dev/null
+
+"Vertical movements
+nnoremap j gj
+nnoremap k gk
+
+"Disable arrow keys
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+
+"Escape key
+:imap jj <Esc>
+
+"Shortcut for editing ~/.vimrc
+nmap <Leader>ev :e $MYVIMRC<cr>
+
+"Change current working directory
+nnoremap <Leader>cd :cd %:p:h<CR>:pwd<CR>
+
+"Set shorcuts for moving lines
+nmap <C-j> :m +1<CR>
+nmap <C-k> :m -2<CR>
+vmap <C-j> :m '>+1<CR>gv=gv
+vmap <C-k> :m '<-2<CR>gv=gv
+
+"Alias for 'intend' and 'unintend'
+vnoremap < <gv
+vnoremap > >gv
+vmap <S-Tab> <
+vmap <Tab> >
+nmap <Tab> >>
+nmap <S-Tab> <<
+
+"----------------Search-----------------
+set hlsearch                                                            "Enable search highlighting
+set incsearch                                                           "Highlight search incrementally
+
+"Hide syntax highlighting after search
+nmap <Leader><space> :nohlsearch<cr>
+
+"---------------Auto-Commands------------"
+
+"Automaticly source .vimrc file on change
+augroup autosourcing
+    autocmd! BufWritePost .vimrc source %
+    autocmd! BufWritePost plugins.vim source %
+augroup END
+
+augroup autoreloading
+    autocmd! BufWritePost * CtrlPClearCache
+augroup END
+
+"Auto-remove trailing whitespaces
+autocmd BufWritePre * :%s/\s\+$//e
+
+"-------------CtrlP------------------
+"Use Ctrl+P for openning CtrlP within present working directory
+nmap <C-p> :CtrlP :pwd<cr>
+
+"Ignore certain files when using CtrlP
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+
+"Show hidden files
+let g:ctrlp_show_hidden = 1

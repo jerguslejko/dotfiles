@@ -28,6 +28,15 @@
     ln -s ~/.dotfiles/git/config ~/.gitconfig
     ln -s ~/.dotfiles/git/ignore ~/.gitignore
     ln -s ~/.dotfiles/git/attributes ~/.gitattributes
+    ln -s ~/.dotfiles/vim/vimrc ~/.vimrc
+    ```
+
+1. Vim-specific setup
+
+    ```
+    mkdir ~/.vim/{bundle,backup,swap}
+    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+    vim +PluginInstall +qall
     ```
 
 1. Reload your shell
