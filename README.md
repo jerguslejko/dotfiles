@@ -67,3 +67,12 @@
     ```
     
 1. Reload your shell
+
+## Miscellaneous
+
+1. MySQL
+
+    ```sql
+    CREATE USER jergus@localhost;
+    GRANT ALL PRIVILEGES ON * . * TO jergus@localhost;
+    ```
