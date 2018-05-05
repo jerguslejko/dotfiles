@@ -73,6 +73,6 @@
 1. MySQL
 
     ```sql
-    CREATE USER jergus@localhost;
-    GRANT ALL PRIVILEGES ON * . * TO jergus@localhost;
+    CREATE USER 'jergus'@'localhost';
+    GRANT ALL PRIVILEGES ON * . * TO 'jergus'@'localhost';
     ```
