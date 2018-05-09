@@ -11,7 +11,7 @@
 1. Install additional tools
 
     ```shell
-    brew install zsh vim git trash composer node yarn mysql hub
+    brew install zsh vim git trash composer node yarn mysql hub tree
     ```
 
 1. Install global composer packages
