@@ -70,7 +70,7 @@
 
 ## Miscellaneous
 
-1. MySQL
+* MySQL
 
     ```sql
     CREATE USER 'jergus'@'localhost';
