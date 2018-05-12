@@ -1,6 +1,6 @@
 syntax enable                                                           "Enable syntax highlighting
 
-so ~/.dotfiles/vim/plugins.vim                                                   "Load plugins
+so ~/.dotfiles/vim/plugins.vim                                          "Load plugins
 
 let mapleader = ','                                                     "Set <Leader> key
 
