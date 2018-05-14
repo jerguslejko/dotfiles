@@ -7,7 +7,9 @@ let mapleader = ','                                                     "Set <Le
 set nocompatible                                                        "Force VIM to behave 'normally'
 set textwidth=0                                                         "Set hard-limit for line length
 set backspace=indent,eol,start                                          "Make backspace work 'normally'
+set number                                                              "Turn on line numbers
 set relativenumber                                                      "Turn on relative line numbers
+"^^ these to combined create a 'hybrid' mode. see absolute number for the current line with relative offsets
 set tabstop=4 shiftwidth=4 softtabstop=4 expandtab                      "Make tabs work 'normally'
 set ic                                                                  "Make searching case-insensitve
 set noerrorbells visualbell t_vb=                                       "Turn off all bells
