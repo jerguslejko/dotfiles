@@ -9,6 +9,7 @@ alias gac="git commit -am"
 alias gwip="git add --all . && git commit -m 'WIP'"
 
 alias gr="git rebase"
+alias gri="git rebase -i"
 alias grm="git rebase master"
 
 alias gamm="git commit --amend"
