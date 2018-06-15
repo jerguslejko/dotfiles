@@ -1,27 +1,26 @@
 __env() {
     local key=$1
-    local default=$2
     local value
 
     if [[ ! -f .env ]]; then
-        echo "$default" && return
+        return
     fi
 
     if [[ ! "$key" ]]; then
-        echo "usage: __env key [default_value]" && return 1
+        echo "usage: __env key" && return 1
     fi
 
     value=$(grep --invert-match "^\s*#" .env | grep "$key=")
 
     if [[ ! "$value" ]]; then
-        echo "$default" && return
+        return
     fi
 
     echo "${value//$key=/}"
 }
 
 __mysqlCompose() {
-    echo "mysql --user='$(__env DB_USERNAME root)' --password='$(__env DB_PASSWORD secret)'"
+    echo "mysql --user='$(__env DB_USERNAME)' --password='$(__env DB_PASSWORD)'"
 }
 
 __mysql() {
