@@ -2,7 +2,6 @@
 alias g="hub"
 
 alias gs="git status"
-alias gc="git commit -m"
 alias ga="git add"
 alias gaa="git add --all ."
 alias gac="git commit -am"
@@ -25,3 +24,8 @@ alias gl="git log --oneline"
 alias gb="git branch"
 alias gco="git checkout"
 alias gcom="git checkout master"
+
+# git commit
+gc() {
+    [ -z "$1" ] && git commit || git commit -m "$1"
+}
