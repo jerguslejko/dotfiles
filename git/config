@@ -9,6 +9,7 @@
 
 [alias]
     undo = "reset HEAD~"
+    search = "!f() { git grep $1 $(git rev-list --all); }; f"
 
 [pager]
     branch = false
