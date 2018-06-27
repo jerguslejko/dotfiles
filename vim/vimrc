@@ -15,6 +15,8 @@ set ic                                                                  "Make se
 set noerrorbells visualbell t_vb=                                       "Turn off all bells
 set autoread                                                            "Make vim autoload new changes to a file
 set nofoldenable                                                        "Disable folds
+set spell spelllang=en_us                                               "Enable spell check
+set spellcapcheck=                                                      "Allow sentences to begin with lowercase letters
 
 "Swap files out of the project root
 set backupdir=~/.vim/backup//
