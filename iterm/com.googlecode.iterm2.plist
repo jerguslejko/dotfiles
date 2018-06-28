@@ -261,6 +261,11 @@
 	<false/>
 	<key>NSScrollViewShouldScrollUnderTitlebar</key>
 	<false/>
+	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
+	<array>
+		<string>0.000000, 0.000000, 224.000000, 263.000000, NO, NO</string>
+		<string>0.000000, 264.000000, 224.000000, 43.000000, NO, NO</string>
+	</array>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGNjdYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
@@ -289,10 +294,12 @@
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
+	<key>NSWindow Frame NSColorPanel</key>
+	<string>0 135 224 280 0 0 1680 1027 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>298 521 796 473 0 0 1680 1027 </string>
+	<string>407 286 918 512 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>422 277 850 498 0 0 1680 1027 </string>
+	<string>0 57 1680 970 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>212 57 850 498 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
@@ -981,9 +988,9 @@
 					<key>notes</key>
 					<string>PHPUnit Test</string>
 					<key>precision</key>
-					<string>high</string>
+					<string>very_high</string>
 					<key>regex</key>
-					<string>[0-9]+\)\s(\w+(?:\\\w+)+)::(\w+)</string>
+					<string>(\w+(?:\\\w+)+)::(\w+)</string>
 				</dict>
 			</array>
 			<key>Space</key>
