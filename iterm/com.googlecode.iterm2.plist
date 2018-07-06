@@ -296,10 +296,14 @@
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>0 135 224 280 0 0 1680 1027 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>530 490 620 392 0 0 1680 1027 </string>
+	<key>NSWindow Frame SessionsPreferences</key>
+	<string>269 128 606 469 0 0 1680 1027 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>407 286 918 512 0 0 1680 1027 </string>
+	<string>163 356 796 473 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 57 1680 970 0 0 1680 1027 </string>
+	<string>0 56 1680 971 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>212 57 850 498 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
@@ -873,6 +877,15 @@
 				<key>Red Component</key>
 				<real>0.30241936445236206</real>
 			</dict>
+			<key>Semantic History</key>
+			<dict>
+				<key>action</key>
+				<string>best editor</string>
+				<key>editor</key>
+				<string>com.sublimetext.3</string>
+				<key>text</key>
+				<string></string>
+			</dict>
 			<key>Send Code When Idle</key>
 			<false/>
 			<key>Shortcut</key>
@@ -1109,7 +1122,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-06-27T09:22:55Z</date>
+	<date>2018-07-05T16:33:24Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>Secure Input</key>
