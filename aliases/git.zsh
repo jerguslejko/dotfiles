@@ -7,10 +7,6 @@ alias gaa="git add --all ."
 alias gac="git commit -am"
 alias gwip="git add --all . && git commit -m 'WIP'"
 
-alias gr="git rebase"
-alias gri="git rebase -i"
-alias grm="git rebase master"
-
 alias gamm="git commit --amend"
 alias gam="git commit --amend --no-edit"
 
@@ -28,4 +24,15 @@ alias gcom="git checkout master"
 # commit
 gc() {
     if [ $# -eq 1 ]; then git commit -m "$1"; else git commit; fi
+}
+
+# rebase
+alias grm="git rebase master"
+
+gr() {
+    if [ $# -eq 1 ]; then git rebase "$1"; else git rebase; fi
+}
+
+gri() {
+    if [ $# -eq 1 ]; then git rebase -i "$1"; else git rebase -i; fi
 }
