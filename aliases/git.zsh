@@ -25,7 +25,7 @@ alias gb="git branch"
 alias gco="git checkout"
 alias gcom="git checkout master"
 
-# git commit
+# commit
 gc() {
-    [ -z "$1" ] && git commit || git commit -m "$1"
+    if [ $# -eq 1 ]; then git commit -m "$1"; else git commit; fi
 }
