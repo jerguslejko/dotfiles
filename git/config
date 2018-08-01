@@ -23,3 +23,11 @@
 	required = true
 	clean = git-lfs clean -- %f
 
+[help]
+	autocorrect = 1
+
+[push]
+    default = matching
+
+[color]
+    ui = true
