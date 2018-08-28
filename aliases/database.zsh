@@ -36,17 +36,25 @@ db() {
 }
 
 dbs() {
+    if [ $# -eq 0 ]; then echo "usage: dbs [database]" && return 1; fi
+
     eval "$(__mysqlCompose) --database='$(__env DB_DATABASE)' --execute='describe \`$1\`'"
 }
 
 mkdb() {
+    if [ $# -eq 0 ]; then echo "usage: mkdb [database]" && return 1; fi
+
     eval "$(__mysqlCompose) --execute='create database \`$1\`'"
 }
 
 dropdb() {
+    if [ $# -eq 0 ]; then echo "usage: dropdb [database]" && return 1; fi
+
     eval "$(__mysqlCompose) --execute='drop database \`$1\`'"
 }
 
 freshdb() {
+    if [ $# -eq 0 ]; then echo "usage: freshdb [database]" && return 1; fi
+
     dropdb "$1" && mkdb "$1"
 }
