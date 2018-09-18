@@ -3,6 +3,7 @@ alias code="cd ~/Code"
 alias desk="cd ~/Desktop"
 alias docs="cd ~/Documents"
 alias down="cd ~/Downloads"
+alias dot="cd ~/.dotfiles"
 
 # Tools
 alias b="brew"
