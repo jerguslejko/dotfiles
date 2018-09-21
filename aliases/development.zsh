@@ -12,7 +12,6 @@ alias com="composer"
 # Others
 alias d=docker
 alias y=yarn
-alias vs="/usr/local/bin/code"
 
 laravel_logs() {
     tail -f -n 450 storage/logs/laravel*.log \
