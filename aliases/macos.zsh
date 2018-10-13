@@ -17,3 +17,7 @@ alias kill_touchbar="pkill 'Touch Bar agent'; killall 'ControlStrip'"
 
 # Expose ~/Code folder
 cdpath=($cdpath ~/Code)
+
+:e() {
+    /usr/local/bin/code ${1-.}
+}
