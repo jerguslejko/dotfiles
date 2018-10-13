@@ -15,6 +15,8 @@ alias show_hidden="defaults write com.apple.finder AppleShowAllFiles -bool YES &
 alias hide_hidden="defaults write com.apple.finder AppleShowAllFiles -bool NO  && killall Finder"
 alias kill_touchbar="pkill 'Touch Bar agent'; killall 'ControlStrip'"
 
+alias dark="osascript -e 'tell application \"System Events\" to tell appearance preferences to set dark mode to not dark mode'"
+
 # Expose ~/Code folder
 cdpath=($cdpath ~/Code)
 
