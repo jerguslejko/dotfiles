@@ -12,8 +12,3 @@ alias com="composer"
 # Others
 alias d=docker
 alias y=yarn
-
-laravel_logs() {
-    tail -f -n 450 storage/logs/laravel*.log \
-        | grep -i -E "^\[\d{4}\-\d{2}\-\d{2} \d{2}:\d{2}:\d{2}\]|Next [\w\W]+?\:" --color
-}
