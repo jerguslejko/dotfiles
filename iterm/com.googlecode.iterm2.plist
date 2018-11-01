@@ -292,13 +292,13 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1046 334 474 94 0 0 1680 1027 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>530 490 620 392 0 0 1680 1027 </string>
+	<string>530 489 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 128 606 469 0 0 1680 1027 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>455 433 1018 447 0 0 1680 1027 </string>
+	<string>455 433 796 486 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 56 1680 971 0 0 1680 1027 </string>
+	<string>422 308 836 466 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>212 101 850 498 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
@@ -1033,6 +1033,8 @@
 			<string>/Users/jergus</string>
 		</dict>
 	</array>
+	<key>NoSyncHaveRequestedFullDiskAccess</key>
+	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
@@ -1117,13 +1119,13 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-10-05T03:36:06Z</date>
+	<date>2018-10-30T03:02:47Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SensitiveScrollWheel</key>
 	<true/>
 	<key>ShowFullScreenTabBar</key>
-	<true/>
+	<false/>
 	<key>TabStyle</key>
 	<integer>1</integer>
 	<key>TabStyleWithAutomaticOption</key>
@@ -1139,6 +1141,6 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.2.2</string>
+	<string>3.2.4</string>
 </dict>
 </plist>
