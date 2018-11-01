@@ -19,6 +19,10 @@ __env() {
     echo "${value//$key=/}"
 }
 
+__mysqlCleanup() {
+    grep -v 'Using a password on the command line interface can be insecure'
+}
+
 __mysqlCompose() {
     echo "mysql --user='$(__env DB_USERNAME)' --password='$(__env DB_PASSWORD)'"
 }
@@ -44,13 +48,13 @@ dbs() {
 mkdb() {
     if [ $# -eq 0 ]; then echo "usage: mkdb [database]" && return 1; fi
 
-    eval "$(__mysqlCompose) --execute='create database \`$1\`'"
+    eval "$(__mysqlCompose) --execute='create database \`$1\`'" 2>&1 | __mysqlCleanup
 }
 
 dropdb() {
     if [ $# -eq 0 ]; then echo "usage: dropdb [database]" && return 1; fi
 
-    eval "$(__mysqlCompose) --execute='drop database \`$1\`'"
+    eval "$(__mysqlCompose) --execute='drop database \`$1\`'" 2>&1 | __mysqlCleanup
 }
 
 freshdb() {
