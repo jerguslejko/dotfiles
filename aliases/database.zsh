@@ -48,13 +48,13 @@ dbs() {
 mkdb() {
     if [ $# -eq 0 ]; then echo "usage: mkdb [database]" && return 1; fi
 
-    eval "$(__mysqlCompose) --execute='create database \`$1\`'" 2>&1 | __mysqlCleanup
+    eval "$(__mysqlCompose) --execute='create database \`$1\`'"
 }
 
 dropdb() {
     if [ $# -eq 0 ]; then echo "usage: dropdb [database]" && return 1; fi
 
-    eval "$(__mysqlCompose) --execute='drop database \`$1\`'" 2>&1 | __mysqlCleanup
+    eval "$(__mysqlCompose) --execute='drop database if exists \`$1\`'"
 }
 
 freshdb() {
