@@ -46,7 +46,7 @@ nmap <Leader>ev :e $MYVIMRC<cr>
 "Change current working directory
 nnoremap <Leader>cd :cd %:p:h<CR>:pwd<CR>
 
-"Set shorcuts for moving lines
+"Set shortcuts for moving lines
 nmap <C-j> :m +1<CR>
 nmap <C-k> :m -2<CR>
 vmap <C-j> :m '>+1<CR>gv=gv
