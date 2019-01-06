@@ -24,7 +24,9 @@
 	clean = git-lfs clean -- %f
 
 [help]
-	autocorrect = 1
+    autocorrect = 1
 
 [color]
     ui = true
+[pull]
+	rebase = true
