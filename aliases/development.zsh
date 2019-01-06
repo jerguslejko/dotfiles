@@ -9,5 +9,4 @@ alias p="phpunit --stop-on-fail"
 alias com="composer"
 
 # Others
-alias d=docker
 alias y=yarn
