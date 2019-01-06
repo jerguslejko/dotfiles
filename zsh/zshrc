@@ -27,3 +27,5 @@ bindkey -M vicmd "k" up-line-or-beginning-search
 bindkey -M vicmd "j" down-line-or-beginning-search
 
 bindkey '^[[Z' reverse-menu-complete # make <shift> + <tab> work in menus
+
+source /usr/local/etc/profile.d/autojump.sh
