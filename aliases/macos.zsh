@@ -18,3 +18,5 @@ alias light="osascript -e 'tell application \"System Events\" to tell appearance
 :e() {
     /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code ${1-.}
 }
+
+alias mysql="mycli --host=localhost"
