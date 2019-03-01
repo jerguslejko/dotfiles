@@ -11,7 +11,7 @@ set number                                                              "Turn on
 set relativenumber                                                      "Turn on relative line numbers
 "^^ these to combined create a 'hybrid' mode. see absolute number for the current line with relative offsets
 set tabstop=4 shiftwidth=4 softtabstop=4 expandtab                      "Make tabs work 'normally'
-set ic                                                                  "Make searching case-insensitve
+set ic                                                                  "Make searching case-insensitive
 set noerrorbells visualbell t_vb=                                       "Turn off all bells
 set autoread                                                            "Make vim autoload new changes to a file
 set nofoldenable                                                        "Disable folds
@@ -24,7 +24,7 @@ set directory=~/.vim/swap//
 set viminfo+=n~/.vim/.viminfo
 
 "----------------Mappings----------------
-"Save readonly files
+"Save read-only files
 cmap w!! w !sudo tee % >/dev/null
 
 "Vertical movements
@@ -52,7 +52,7 @@ nmap <C-k> :m -2<CR>
 vmap <C-j> :m '>+1<CR>gv=gv
 vmap <C-k> :m '<-2<CR>gv=gv
 
-"Alias for 'intend' and 'unintend'
+"Alias for 'intend' and 'un-intend'
 vnoremap < <gv
 vnoremap > >gv
 vmap <S-Tab> <
@@ -69,7 +69,7 @@ nmap <Leader><space> :nohlsearch<cr>
 
 "---------------Auto-Commands------------"
 
-"Automaticly source .vimrc file on change
+"Automatically source .vimrc file on change
 augroup autosourcing
     autocmd! BufWritePost .vimrc source %
     autocmd! BufWritePost plugins.vim source %
@@ -79,11 +79,11 @@ augroup autoreloading
     autocmd! BufWritePost * CtrlPClearCache
 augroup END
 
-"Auto-remove trailing whitespaces
+"Auto-remove trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
 
 "-------------CtrlP------------------
-"Use Ctrl+P for openning CtrlP within present working directory
+"Use Ctrl+P for opening CtrlP within present working directory
 nmap <C-p> :CtrlP :pwd<cr>
 
 "Ignore certain files when using CtrlP
