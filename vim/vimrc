@@ -38,7 +38,7 @@ noremap <Left> <NOP>
 noremap <Right> <NOP>
 
 "Escape key
-:imap jj <Esc>
+imap jj <Esc>
 
 "Shortcut for editing ~/.vimrc
 nmap <Leader>ev :e $MYVIMRC<cr>
