@@ -15,8 +15,4 @@ alias kill_touchbar="pkill 'Touch Bar agent'; killall 'ControlStrip'"
 alias dark="osascript -e 'tell application \"System Events\" to tell appearance preferences to set dark mode to not dark mode'"
 alias light="osascript -e 'tell application \"System Events\" to tell appearance preferences to set dark mode to not dark mode'"
 
-:e() {
-    /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code ${1-.}
-}
-
 alias mysql="mycli --host=localhost"
