@@ -1,11 +1,8 @@
 # path to oh-my-zsh
 export ZSH=~/.oh-my-zsh
 
-# highlighting
-source ~/.dotfiles/zsh/highlighting.zsh
-
 # plugins
-plugins=(symfony-console zsh-syntax-highlighting vi-mode)
+plugins=(symfony-console vi-mode)
 
 # bootstrap oh-my-zsh
 source $ZSH/oh-my-zsh.sh
