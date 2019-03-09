@@ -9,7 +9,6 @@
 
 [alias]
     undo = "reset HEAD~1"
-    search = "!f() { git grep $1 $(git rev-list --all); }; f"
 
 [pager]
     branch = false
@@ -28,5 +27,6 @@
 
 [color]
     ui = true
+
 [pull]
 	rebase = true
