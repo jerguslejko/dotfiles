@@ -302,6 +302,28 @@
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
+	<key>NSTouchBarConfig: regular</key>
+	<dict>
+		<key>CurrentItems</key>
+		<array>
+			<string>NSTouchBarItemIdentifierFlexibleSpace</string>
+			<string>NSTouchBarItemIdentifierOtherItemsProxy</string>
+			<string>iTermTouchBarIdentifierAddMark</string>
+			<string>iTermTouchBarIdentifierPreviousMark</string>
+			<string>iTermTouchBarIdentifierNextMark</string>
+		</array>
+		<key>DefaultItems</key>
+		<array>
+			<string>iTermTouchBarIdentifierManPage</string>
+			<string>iTermTouchBarIdentifierColorPreset</string>
+			<string>iTermTouchBarIdentifierFunctionKeys</string>
+			<string>NSTouchBarItemIdentifierFlexibleSpace</string>
+			<string>NSTouchBarItemIdentifierOtherItemsProxy</string>
+			<string>iTermTouchBarIdentifierAddMark</string>
+			<string>iTermTouchBarIdentifierPreviousMark</string>
+			<string>iTermTouchBarIdentifierNextMark</string>
+		</array>
+	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>1034 423 228 275 0 0 1680 1027 </string>
 	<key>NSWindow Frame NSFontPanel</key>
@@ -311,9 +333,9 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 128 606 469 0 0 1680 1027 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>457 375 796 486 0 0 1680 1027 </string>
+	<string>651 333 796 486 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 57 1680 970 0 0 1680 1027 </string>
+	<string>0 529 850 498 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>212 101 850 498 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
@@ -641,6 +663,13 @@
 					<key>Text</key>
 					<string>0x7f</string>
 				</dict>
+				<key>0xf700-0x200000</key>
+				<dict>
+					<key>Action</key>
+					<integer>13</integer>
+					<key>Text</key>
+					<string></string>
+				</dict>
 				<key>0xf700-0x220000</key>
 				<dict>
 					<key>Action</key>
@@ -661,6 +690,13 @@
 					<integer>10</integer>
 					<key>Text</key>
 					<string>[1;6A</string>
+				</dict>
+				<key>0xf701-0x200000</key>
+				<dict>
+					<key>Action</key>
+					<integer>13</integer>
+					<key>Text</key>
+					<string></string>
 				</dict>
 				<key>0xf701-0x220000</key>
 				<dict>
@@ -683,6 +719,13 @@
 					<key>Text</key>
 					<string>[1;6B</string>
 				</dict>
+				<key>0xf702-0x200000</key>
+				<dict>
+					<key>Action</key>
+					<integer>13</integer>
+					<key>Text</key>
+					<string></string>
+				</dict>
 				<key>0xf702-0x220000</key>
 				<dict>
 					<key>Action</key>
@@ -703,6 +746,13 @@
 					<integer>10</integer>
 					<key>Text</key>
 					<string>[1;6D</string>
+				</dict>
+				<key>0xf703-0x200000</key>
+				<dict>
+					<key>Action</key>
+					<integer>13</integer>
+					<key>Text</key>
+					<string></string>
 				</dict>
 				<key>0xf703-0x220000</key>
 				<dict>
@@ -1054,6 +1104,8 @@
 	</array>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
+	<key>NoSyncHaveWarnedAboutIncompatibleSoftware</key>
+	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
@@ -1140,7 +1192,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-02-09T12:55:50Z</date>
+	<date>2019-03-03T14:33:34Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SensitiveScrollWheel</key>
