@@ -10,3 +10,7 @@ alias com="composer"
 
 # Others
 alias y=yarn
+
+t() {
+    tree -I '.git|.DS_Store|node_modules|vendor' --dirsfirst -L "${2-100}" -aC "${1-.}"
+}
