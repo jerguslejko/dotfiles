@@ -1,13 +1,13 @@
 # My .dotfiles
 
-## Pre-setup - macOS only
-   
+## Pre-setup
+
 1. Install Homebrew
 
     ```shell
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     ```
-    
+
 1. Install additional tools
 
     ```shell
@@ -20,7 +20,7 @@
     composer global require laravel/valet laravel/installer laravel/envoy psy/psysh
     ```
 
-## Installation 
+## Installation
 
 1. Install oh-my-zsh
 
@@ -49,7 +49,6 @@
 
     ```shell
     git clone https://github.com/jerguslejko/zsh-symfony-completion.git ~/.oh-my-zsh/custom/plugins/symfony-console
-    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
     ```
 
 1. Install vim plugins
@@ -65,7 +64,7 @@
     ```shell
     touch ~/.hushlogin
     ```
-    
+
 1. Reload your shell
 
 ## Miscellaneous
