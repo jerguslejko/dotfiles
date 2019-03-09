@@ -75,11 +75,5 @@ augroup END
 autocmd BufWritePre * :%s/\s\+$//e
 
 "-------------CtrlP------------------
-"Use Ctrl+P for opening CtrlP within present working directory
-nmap <C-p> :CtrlP :pwd<cr>
-
 "List files, ignore .gitignore
 let g:ctrlp_user_command = "git ls-files 2>/dev/null || find . -type f | sed 's|^./||g'"
-
-"This sets CtrlP directory to Vim's cwd
-let g:ctrlp_working_path_mode = 0
