@@ -53,8 +53,6 @@ set incsearch                                                           "Highlig
 nmap <Leader><space> :nohlsearch<cr>
 
 "---------------Auto-Commands------------"
-
-"Automatically source .vimrc file on change
 augroup autosourcing
     autocmd! BufWritePost .vimrc source %
     autocmd! BufWritePost plugins.vim source %
