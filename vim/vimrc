@@ -23,10 +23,6 @@ set directory=~/.vim/swap//
 set viminfo+=n~/.vim/.viminfo
 
 "----------------Mappings----------------
-"Vertical movements
-nnoremap j gj
-nnoremap k gk
-
 "Disable arrow keys
 noremap <Up> <NOP>
 noremap <Down> <NOP>
