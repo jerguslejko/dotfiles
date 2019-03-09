@@ -55,14 +55,6 @@ nmap <C-k> :m -2<CR>
 vmap <C-j> :m '>+1<CR>gv=gv
 vmap <C-k> :m '<-2<CR>gv=gv
 
-"Alias for 'intend' and 'un-intend'
-vnoremap < <gv
-vnoremap > >gv
-vmap <S-Tab> <
-vmap <Tab> >
-nmap <Tab> >>
-nmap <S-Tab> <<
-
 "----------------Search-----------------
 set hlsearch                                                            "Enable search highlighting
 set incsearch                                                           "Highlight search incrementally
