@@ -23,9 +23,6 @@ set directory=~/.vim/swap//
 set viminfo+=n~/.vim/.viminfo
 
 "----------------Mappings----------------
-"Save read-only files
-cmap w!! w !sudo tee % >/dev/null
-
 "Vertical movements
 nnoremap j gj
 nnoremap k gk
