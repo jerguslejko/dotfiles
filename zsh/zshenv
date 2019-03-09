@@ -6,10 +6,5 @@ export EDITOR="vim"
 
 # source aliases
 for file in ~/.dotfiles/aliases/*; do
-    # only load macos.zsh on macOS
-    if [[ "$file" == *macos.zsh && $(uname) != "Darwin" ]]; then
-        continue
-    fi
-
     source "$file"
 done
