@@ -38,6 +38,7 @@ imap jj <Esc>
 
 "Shortcut for editing ~/.vimrc
 nmap <Leader>ev :e $MYVIMRC<cr>
+nmap <Leader>ed :e ~/.dotfiles<cr>
 
 "Turn off spell check
 nmap <Leader>ns :set nospell<cr>
