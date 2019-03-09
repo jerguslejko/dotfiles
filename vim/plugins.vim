@@ -7,7 +7,6 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-vinegar'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-surround'
-Plugin 'travisjeffery/vim-auto-mkdir'
 
 call vundle#end()
 filetype plugin indent on
