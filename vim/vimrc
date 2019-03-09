@@ -73,7 +73,3 @@ augroup END
 
 "Auto-remove trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
-
-"-------------CtrlP------------------
-"List files, ignore .gitignore
-let g:ctrlp_user_command = "git ls-files 2>/dev/null || find . -type f | sed 's|^./||g'"
