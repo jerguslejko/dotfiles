@@ -2,7 +2,7 @@
 export ZSH=~/.oh-my-zsh
 
 # plugins
-plugins=(symfony-console)
+plugins=(symfony-console autojump)
 
 # bootstrap oh-my-zsh
 source $ZSH/oh-my-zsh.sh
@@ -18,8 +18,6 @@ function vi_mode_prompt_info() {
 }
 
 RPS1='$(vi_mode_prompt_info)'
-
-source /usr/local/etc/profile.d/autojump.sh
 
 # vi mode
 # Updates editor information when the keymap changes.
