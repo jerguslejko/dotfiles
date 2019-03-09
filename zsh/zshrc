@@ -2,10 +2,13 @@
 export ZSH=~/.oh-my-zsh
 
 # plugins
-plugins=(symfony-console vi-mode)
+plugins=(symfony-console)
 
 # bootstrap oh-my-zsh
 source $ZSH/oh-my-zsh.sh
+
+# vi mode
+bindkey -v
 
 # custom theme
 PROMPT='%{$fg[yellow]%} %{$fg[green]%}%c %{$fg[yellow]%}→ $(git_prompt_info)%{$reset_color%}'
@@ -14,12 +17,5 @@ ZSH_THEME_GIT_PROMPT_PREFIX="git:(%{$fg[red]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$fg[yellow]%}) %{$reset_color%}"
 
 export KEYTIMEOUT=1
-
-bindkey "^[OA" up-line-or-beginning-search
-bindkey "^[OB" down-line-or-beginning-search
-bindkey -M vicmd "k" up-line-or-beginning-search
-bindkey -M vicmd "j" down-line-or-beginning-search
-
-bindkey '^[[Z' reverse-menu-complete # make <shift> + <tab> work in menus
 
 source /usr/local/etc/profile.d/autojump.sh
