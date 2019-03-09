@@ -43,9 +43,6 @@ imap jj <Esc>
 "Shortcut for editing ~/.vimrc
 nmap <Leader>ev :e $MYVIMRC<cr>
 
-"Change current working directory
-nnoremap <Leader>cd :cd %:p:h<CR>:pwd<CR>
-
 "Turn off spell check
 nmap <Leader>ns :set nospell<cr>
 
