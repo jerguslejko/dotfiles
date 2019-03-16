@@ -14,6 +14,8 @@
 	<integer>1</integer>
 	<key>AppleWindowTabbingMode</key>
 	<string>manual</string>
+	<key>CGFontRenderingFontSmoothingDisabled</key>
+	<false/>
 	<key>Control</key>
 	<integer>1</integer>
 	<key>CopyLastNewline</key>
@@ -233,12 +235,34 @@
 	</dict>
 	<key>Default Bookmark Guid</key>
 	<string>6BDBBBC1-A85A-487B-A024-4972A854B7C7</string>
+	<key>DimBackgroundWindows</key>
+	<false/>
+	<key>DimInactiveSplitPanes</key>
+	<false/>
+	<key>DimOnlyText</key>
+	<false/>
+	<key>DisableFullscreenTransparency</key>
+	<false/>
+	<key>EnableDivisionView</key>
+	<true/>
+	<key>EnableProxyIcon</key>
+	<false/>
+	<key>FlashTabBarInFullscreen</key>
+	<false/>
+	<key>HideActivityIndicator</key>
+	<true/>
 	<key>HideFromDockAndAppSwitcher</key>
 	<false/>
 	<key>HideMenuBarInFullscreen</key>
 	<false/>
+	<key>HideScrollbar</key>
+	<false/>
 	<key>HideTab</key>
 	<false/>
+	<key>HideTabCloseButton</key>
+	<true/>
+	<key>HideTabNumber</key>
+	<true/>
 	<key>Hotkey</key>
 	<true/>
 	<key>HotkeyChar</key>
@@ -249,6 +273,8 @@
 	<true/>
 	<key>HotkeyModifiers</key>
 	<integer>256</integer>
+	<key>JobName</key>
+	<true/>
 	<key>LeftOption</key>
 	<integer>2</integer>
 	<key>LoadPrefsFromCustomFolder</key>
@@ -257,6 +283,10 @@
 	<string>6</string>
 	<key>NSColorPickerPreferredRGBEntryMode</key>
 	<integer>2</integer>
+	<key>NSFontPanelPreviewHeight</key>
+	<real>100</real>
+	<key>NSFontPanelSizeSliderParams</key>
+	<string>2 0 100</string>
 	<key>NSNavLastRootDirectory</key>
 	<string>~/.dotfiles/iterm</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
@@ -271,8 +301,8 @@
 	<false/>
 	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
 	<array>
-		<string>0.000000, 0.000000, 228.000000, 294.000000, NO, NO</string>
-		<string>0.000000, 295.000000, 228.000000, 48.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 228.000000, 258.000000, NO, NO</string>
+		<string>0.000000, 259.000000, 228.000000, 48.000000, NO, NO</string>
 	</array>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
@@ -327,15 +357,17 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>1034 423 228 275 0 0 1680 1027 </string>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>1046 217 474 77 0 0 1680 1027 </string>
+	<string>782 258 474 77 0 0 1680 1050 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>530 489 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 128 606 469 0 0 1680 1027 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>651 333 796 486 0 0 1680 1027 </string>
+	<string>455 572 1018 447 0 0 1680 1050 </string>
+	<key>NSWindow Frame com.apple.typography_panel_Consolas</key>
+	<string>296 511 260 116 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 529 850 498 0 0 1680 1027 </string>
+	<string>0 528 850 499 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>212 101 850 498 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
@@ -1192,25 +1224,33 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-03-03T14:33:34Z</date>
+	<date>2019-03-16T17:36:32Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SensitiveScrollWheel</key>
 	<true/>
 	<key>ShowFullScreenTabBar</key>
 	<true/>
+	<key>ShowNewOutputIndicator</key>
+	<false/>
 	<key>SplitPaneDimmingAmount</key>
 	<real>0.38154547275641026</real>
+	<key>StretchTabsToFillBar</key>
+	<true/>
 	<key>TabStyle</key>
 	<integer>1</integer>
 	<key>TabStyleWithAutomaticOption</key>
 	<integer>1</integer>
 	<key>TabViewType</key>
-	<integer>0</integer>
+	<integer>1</integer>
+	<key>UseBorder</key>
+	<false/>
 	<key>UseMetal</key>
 	<true/>
 	<key>UseModernScrollWheelAccumulator</key>
 	<true/>
+	<key>WindowNumber</key>
+	<false/>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>findMode_iTerm</key>
