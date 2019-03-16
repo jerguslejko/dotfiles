@@ -34,3 +34,5 @@ zle -N zle-keymap-select
 
 bindkey -v
 
+bindkey '^P' up-line-or-beginning-search
+bindkey '^N' down-line-or-beginning-search
