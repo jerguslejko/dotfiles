@@ -17,6 +17,11 @@ set nofoldenable                                                        "Disable
 set spell spelllang=en_us                                               "Enable spell check
 set spellcapcheck=                                                      "Allow sentences to begin with lowercase letters
 
+set exrc                                                                "Support per-project .vimrc files
+set secure                                                              "^^ works safely
+
+set wildignore=*.o,*.pyc                                                "Hide files
+
 "Swap files out of the project root
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//
@@ -64,3 +69,5 @@ augroup END
 
 "Auto-remove trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
+
+let g:ctrlp_user_command  = '[ -d .git ] && (git ls-files && git ls-files --others) || (find %s -type f)'
