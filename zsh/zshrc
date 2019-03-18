@@ -13,26 +13,9 @@ PROMPT='%{$fg[yellow]%} %{$fg[green]%}%c %{$fg[yellow]%}→ $(git_prompt_info)%{
 ZSH_THEME_GIT_PROMPT_PREFIX="git:(%{$fg[red]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$fg[yellow]%}) %{$reset_color%}"
 
-function vi_mode_prompt_info() {
-    echo "${${KEYMAP/vicmd/-- NORMAL --}/main/-- INSERT --}"
-}
-
-RPS1='$(vi_mode_prompt_info)'
-
 # vi mode
-# Updates editor information when the keymap changes.
-function zle-keymap-select() {
-  zle -R; zle reset-prompt
-}
-
-# Ensure that the prompt is redrawn when the terminal size changes.
-TRAPWINCH() {
-  zle && { zle -R; zle reset-prompt }
-}
-
-zle -N zle-keymap-select
-
 bindkey -v
 
 bindkey '^P' up-line-or-beginning-search
 bindkey '^N' down-line-or-beginning-search
+bindkey "^?" backward-delete-char # make backspace work
