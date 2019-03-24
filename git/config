@@ -17,16 +17,10 @@
     command = /usr/bin/true
 
 [filter "lfs"]
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
 	required = true
 	clean = git-lfs clean -- %f
-
-[help]
-    autocorrect = 1
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
 
 [color]
     ui = true
-
-[pull]
-	rebase = true
