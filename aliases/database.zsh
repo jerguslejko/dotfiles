@@ -19,10 +19,6 @@ __env() {
     echo "${value//$key=/}"
 }
 
-__mysqlCleanup() {
-    grep -v 'Using a password on the command line interface can be insecure'
-}
-
 __mysqlCompose() {
     echo "mysql --user='$(__env DB_USERNAME)' --password='$(__env DB_PASSWORD)'"
 }
