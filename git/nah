@@ -1,0 +1,7 @@
+#!/bin/sh
+
+set -e
+
+git reset --quiet HEAD .
+git checkout -- .
+git clean -fdq
