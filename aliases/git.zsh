@@ -4,7 +4,6 @@ alias g="hub"
 alias gs="git status"
 alias ga="git add"
 alias gaa="git add --all ."
-alias gwip="git add --all . && git commit -m 'WIP'"
 
 alias gamm="git commit --amend"
 alias gam="git commit --amend --no-edit"

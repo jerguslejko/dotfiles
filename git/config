@@ -10,6 +10,7 @@
 [alias]
     undo = "! ~/.dotfiles/git/undo"
     nah = "! ~/.dotfiles/git/nah"
+    wip = "! ~/.dotfiles/git/wip"
 
 [pager]
     branch = false
