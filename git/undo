@@ -1,0 +1,9 @@
+#!/bin/sh
+
+changes=$(git status --short)
+
+if [[ ! -z "$changes" ]]; then
+    echo "error: index is modified. refusing to undo last commit" && exit 1
+else
+    git reset HEAD~1
+fi

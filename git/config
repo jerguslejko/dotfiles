@@ -8,7 +8,7 @@
     attributesfile = ~/.gitattributes
 
 [alias]
-    undo = "reset HEAD~1"
+    undo = "! ~/.dotfiles/git/undo"
 
 [pager]
     branch = false
