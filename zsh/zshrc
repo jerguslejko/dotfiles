@@ -19,3 +19,5 @@ bindkey -v
 bindkey '^P' up-line-or-beginning-search
 bindkey '^N' down-line-or-beginning-search
 bindkey "^?" backward-delete-char # make backspace work
+
+bindkey '^[[Z' reverse-menu-complete
