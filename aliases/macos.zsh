@@ -8,14 +8,13 @@ alias show_hidden="defaults write com.apple.finder AppleShowAllFiles -bool YES &
 alias hide_hidden="defaults write com.apple.finder AppleShowAllFiles -bool NO  && killall Finder"
 
 # macOS is great!
-alias kill_touchbar="pkill 'Touch Bar agent'; killall 'ControlStrip'"
+alias kill_touchbar="pkill 'Touch Bar agent' && killall 'ControlStrip'"
 
 # brew install bat
-bat() {
+cat() {
     $(brew --prefix)/bin/bat \
         --paging never \
         --plain \
         --theme=$(defaults read -globalDomain AppleInterfaceStyle &> /dev/null && echo default || echo GitHub) \
         $1
 }
-alias cat="bat"
