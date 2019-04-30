@@ -2,7 +2,7 @@
 
 changes=$(git status --short)
 
-if [[ ! -z "$changes" ]]; then
+if [[ ! -z "$changes" && $1 != "--force" ]]; then
     echo "error: index is modified. refusing to undo last commit" && exit 1
 else
     git reset HEAD~1
