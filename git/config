@@ -11,6 +11,11 @@
     undo = "! ~/.dotfiles/git/undo"
     nah = "! ~/.dotfiles/git/nah"
     wip = "! ~/.dotfiles/git/wip"
+    amend = "commit --amend --edit"
+    aa = "add ."
+    ci = "commit"
+    co = "checkout"
+    l = "log --oneline"
 
 [pager]
     branch = false
