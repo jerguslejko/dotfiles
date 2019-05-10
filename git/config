@@ -15,7 +15,7 @@
     aa = "add ."
     ci = "commit"
     co = "checkout"
-    l = "log --oneline"
+    about = "!git diff $(git describe --tags --abbrev=0) master"
 
 [pager]
     branch = false
@@ -31,3 +31,6 @@
 
 [color]
     ui = true
+
+[format]
+	pretty = %C(yellow)%h%C(auto)%d %C(bold)%s%Creset %C(dim)by %cn, %cr
