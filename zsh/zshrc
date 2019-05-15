@@ -7,6 +7,9 @@ plugins=(symfony-console autojump)
 # bootstrap oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
+# Reset
+unalias l
+
 # custom theme
 PROMPT='%{$fg[yellow]%}%{$fg[green]%}%c %{$fg[yellow]%}→ $(git_prompt_info)%{$reset_color%}'
 
