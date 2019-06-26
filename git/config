@@ -17,6 +17,7 @@
     ci = "commit"
     co = "checkout"
     about = "!git diff $(git describe --tags --abbrev=0) master"
+    todo = "commit --message 'TODO'"
 
 [pager]
     branch = false
