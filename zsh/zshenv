@@ -4,6 +4,10 @@ export PATH="/usr/local/bin:/usr/local/sbin:$HOME/.composer/vendor/bin:$HOME/.co
 # preferred editor
 export EDITOR="vi"
 
+if [ -f ~/.dotfiles/secrets.sh ]; then
+    source ~/.dotfiles/secrets.sh
+fi
+
 # source aliases
 for file in ~/.dotfiles/aliases/*; do
     source "$file"
