@@ -1,0 +1,62 @@
+#!/usr/bin/env bash
+
+set -e
+
+USERNAME="$SPONGEBOB_IMGFLIP_USERNAME"
+PASSWORD="$SPONGEBOB_IMGFLIP_PASSWORD"
+
+if [[ -z $1 ]]; then
+    echo "[error] spongebob text" && exit
+fi
+
+request() {
+    text=$1
+    length=$(echo $text | wc -c)
+
+    if [[ $length -gt 12 ]]; then
+        y="220"
+    else
+        y="270"
+    fi
+
+    curl --silent -X POST \
+      'https://api.imgflip.com/caption_image?=' \
+      -d "template_id=102156234&username=$USERNAME&password=$PASSWORD&boxes[0][text]=$text&boxes[0][y]=$y&boxes[0][x]=0&boxes[0][width]=500&boxes[0][height]=300"
+}
+
+shuffle() {
+    word="$1 $2 $3 $4 $5 $6 $7 $8 $9"
+    new_string=""
+
+    for i in $(seq 1 ${#word})
+    do
+        char="${word:i-1:1}"
+
+        let "case = $RANDOM % 2"
+
+        if [[ $case == 0 ]]; then
+            c=$(echo $char | tr '[:upper:]' '[:lower:]')
+        else
+            c=$(echo $char | tr '[:lower:]' '[:upper:]')
+        fi
+
+        if [[ $char == ' ' ]]; then
+            new_string="$new_string "
+        else
+            new_string="$new_string$c"
+        fi
+    done
+
+    echo $new_string
+}
+
+main() {
+    input=$(shuffle "$1" | sed 's/ /%20/g')
+    url=$(request $input | jq -r ".data.url")
+
+    echo $url | pbcopy
+
+    echo "GIF available at [$url]. URL copied into clipboard!"
+}
+
+main "$@"

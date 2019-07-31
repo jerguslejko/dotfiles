@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+
+set -e
+
+TOKEN="$DROP_DROPBOX_KEY"
+
+upload() {
+    curl --silent -X POST https://content.dropboxapi.com/2/files/upload \
+        --header "Authorization: Bearer $TOKEN" \
+        --header "Dropbox-API-Arg: {\"path\": \"/$1\"}" \
+        --header "Content-Type: application/octet-stream" \
+        --data-binary @"$1"
+}
+
+share() {
+    curl --silent -X POST https://api.dropboxapi.com/2/sharing/create_shared_link_with_settings \
+        --header "Authorization: Bearer $TOKEN" \
+        --data "{\"path\": \"/$1\",\"settings\": {\"requested_visibility\": \"public\"}}" \
+        --header "Content-Type: application/json"
+}
+
+main() {
+    upload "$1" > /dev/null
+
+    url=$(share $1 | jq ".url" | tr -d '"')
+
+    echo $url | pbcopy
+
+    echo "File uploaded to [$url]. URL was copied to your clipboard."
+}
+
+main "$1"
