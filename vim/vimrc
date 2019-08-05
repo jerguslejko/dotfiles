@@ -62,6 +62,10 @@ augroup autosourcing
     autocmd! BufWritePost plugins.vim source %
 augroup END
 
+augroup phpcsfixer
+    autocmd! BufWritePost *.php silent! ![ -f vendor/bin/php-cs-fixer ] && vendor/bin/php-cs-fixer fix --quiet %
+augroup END
+
 augroup autoreloading
     autocmd! BufWritePost * CtrlPClearCache
 augroup END
