@@ -1,6 +1,10 @@
 # path
 export PATH="/usr/local/bin:/usr/local/sbin:$HOME/.composer/vendor/bin:$HOME/.config/yarn/global/node_modules/.bin:/usr/local/opt/mysql@5.7/bin:$HOME/.dotfiles/bin:$PATH"
 
+# locale
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 # preferred editor
 export EDITOR="vi"
 
