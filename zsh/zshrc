@@ -24,3 +24,6 @@ bindkey '^N' down-line-or-beginning-search
 bindkey "^?" backward-delete-char # make backspace work
 bindkey '^[[Z' reverse-menu-complete # make shift-tab work
 bindkey '^R' history-incremental-search-backward
+
+# autojump
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
