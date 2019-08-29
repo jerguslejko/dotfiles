@@ -7,7 +7,7 @@ plugins=(symfony-console autojump)
 # bootstrap oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
-# Reset
+# reset
 unalias l
 
 # custom theme
