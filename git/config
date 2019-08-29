@@ -13,12 +13,12 @@
     wip = "! ~/.dotfiles/git/wip"
     drop = "! ~/.dotfiles/git/drop"
     coin = "! ~/.dotfiles/git/coin"
+    about = "! ~/.dotfiles/git/about"
     amend = "commit --amend"
     squash = "commit --amend --no-edit"
     aa = "add ."
     ci = "commit"
     co = "checkout"
-    about = "!git diff $(git describe --tags --abbrev=0) master"
     todo = "commit --message 'TODO'"
 
 [pager]
