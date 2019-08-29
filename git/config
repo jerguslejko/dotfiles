@@ -8,12 +8,6 @@
     attributesfile = ~/.gitattributes
 
 [alias]
-    undo = "! ~/.dotfiles/git/undo"
-    nah = "! ~/.dotfiles/git/nah"
-    wip = "! ~/.dotfiles/git/wip"
-    drop = "! ~/.dotfiles/git/drop"
-    coin = "! ~/.dotfiles/git/coin"
-    about = "! ~/.dotfiles/git/about"
     amend = "commit --amend"
     squash = "commit --amend --no-edit"
     aa = "add ."

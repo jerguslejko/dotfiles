@@ -1,5 +1,5 @@
 # path
-export PATH="/usr/local/bin:/usr/local/sbin:$HOME/.composer/vendor/bin:$HOME/.config/yarn/global/node_modules/.bin:/usr/local/opt/mysql@5.7/bin:$HOME/.dotfiles/bin:$PATH"
+export PATH="/usr/local/bin:/usr/local/sbin:$HOME/.composer/vendor/bin:$HOME/.config/yarn/global/node_modules/.bin:/usr/local/opt/mysql@5.7/bin:$HOME/.dotfiles/bin:$HOME/.dotfiles/git/scripts:$PATH"
 
 # locale
 export LC_ALL=en_US.UTF-8
