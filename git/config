@@ -12,6 +12,7 @@
     nah = "! ~/.dotfiles/git/nah"
     wip = "! ~/.dotfiles/git/wip"
     drop = "! ~/.dotfiles/git/drop"
+    coin = "! ~/.dotfiles/git/coin"
     amend = "commit --amend"
     squash = "commit --amend --no-edit"
     aa = "add ."

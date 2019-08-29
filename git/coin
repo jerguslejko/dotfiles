@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+
+git commit -m "[about to be coined]"
+
+editor="vim -c ':%s/pick \([a-z0-9]\+\) \[about to be coined\]/fixup \1 [about to be coined]/'"
+
+GIT_SEQUENCE_EDITOR="$editor" git rebase -i master
