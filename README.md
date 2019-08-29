@@ -43,6 +43,7 @@
     ln -sf ~/.dotfiles/git/config ~/.gitconfig
     ln -sf ~/.dotfiles/git/ignore ~/.gitignore
     ln -sf ~/.dotfiles/git/attributes ~/.gitattributes
+    ln -sf ~/.dotfiles/iterm/darkmode.py /Users/jergus/Library/Application\ Support/iTerm2/Scripts
     ```
 
 1. Install oh-my-zsh plugins
