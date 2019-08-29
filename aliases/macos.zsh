@@ -1,5 +1,6 @@
 # Tools
 alias git="hub" # brew install hub
+alias j="autojump" # brew install autojump
 alias rm="$(brew --prefix)/bin/trash" # brew install trash
 alias mysql="$(brew --prefix)/bin/mycli --host=localhost" # brew install mycli
 
