@@ -3,7 +3,7 @@
 set -e
 
 if [[ -z $1 ]]; then
-    echo "usage: git drop sha" && exit 1
+    echo "usage: git coin sha" && exit 1
 fi
 
 git commit -m "[about to be coined]"
