@@ -31,3 +31,6 @@
 
 [format]
 	pretty = %C(yellow)%h%C(auto)%d %C(bold)%s%Creset %C(dim)by %cn, %cr
+
+[pull]
+	rebase = true
