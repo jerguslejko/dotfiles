@@ -2,8 +2,12 @@
 
 set -e
 
+if [[ -z $1 ]]; then
+    echo "usage: git drop sha" && exit 1
+fi
+
 git commit -m "[about to be coined]"
 
 editor="vim -c ':%s/pick \([a-z0-9]\+\) \[about to be coined\]/fixup \1 [about to be coined]/'"
 
-GIT_SEQUENCE_EDITOR="$editor" git rebase -i master
+GIT_SEQUENCE_EDITOR="$editor" git rebase -i $1
