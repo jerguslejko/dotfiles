@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# git coin: COmmit aNd rebase Interactively
+
 set -e
 
 if [[ -z $1 ]]; then
