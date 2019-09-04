@@ -8,12 +8,11 @@
     attributesfile = ~/.gitattributes
 
 [alias]
-    amend = "commit --amend"
-    squash = "commit --amend --no-edit"
     aa = "add ."
     ci = "commit"
     co = "checkout"
-    todo = "commit --message 'TODO'"
+    amend = "commit --amend"
+    squash = "commit --amend --no-edit"
 
 [pager]
     branch = false
