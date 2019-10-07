@@ -1,7 +1,6 @@
 # Tools
 alias git="$(brew --prefix)/bin/hub" # brew install hub
 alias rm="$(brew --prefix)/bin/trash" # brew install trash
-alias mysql="$(brew --prefix)/bin/mycli --host=localhost" # brew install mycli
 
 # Hidden files
 alias show_hidden="defaults write com.apple.finder AppleShowAllFiles -bool YES && killall Finder"
