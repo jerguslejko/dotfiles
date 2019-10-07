@@ -2,7 +2,7 @@
 export ZSH=~/.oh-my-zsh
 
 # plugins
-plugins=(symfony-console)
+plugins=()
 
 # bootstrap oh-my-zsh
 source $ZSH/oh-my-zsh.sh
