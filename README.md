@@ -11,7 +11,7 @@
 1. Install additional tools
 
     ```shell
-    brew install zsh vim git trash composer node yarn mysql hub tree
+    brew install zsh vim git trash composer node yarn hub tree autojump bat mysql@5.7
     ```
 
 1. Install global composer packages
@@ -44,12 +44,6 @@
     ln -sf ~/.dotfiles/git/ignore ~/.gitignore
     ln -sf ~/.dotfiles/git/attributes ~/.gitattributes
     ln -sf ~/.dotfiles/iterm/darkmode.py /Users/jergus/Library/Application\ Support/iTerm2/Scripts
-    ```
-
-1. Install oh-my-zsh plugins
-
-    ```shell
-    git clone https://github.com/jerguslejko/zsh-symfony-completion.git ~/.oh-my-zsh/custom/plugins/symfony-console
     ```
 
 1. Install vim plugins
