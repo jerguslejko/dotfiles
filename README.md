@@ -59,6 +59,12 @@
     ```shell
     touch ~/.hushlogin
     ```
+    
+1. Install fonts
+
+    ```shell
+    cp ~/.dotfiles/fonts/* ~/Library/Fonts
+    ```
 
 1. Reload your shell
 
