@@ -43,7 +43,7 @@
     ln -sf ~/.dotfiles/git/config ~/.gitconfig
     ln -sf ~/.dotfiles/git/ignore ~/.gitignore
     ln -sf ~/.dotfiles/git/attributes ~/.gitattributes
-    ln -sf ~/.dotfiles/iterm/darkmode.py /Users/jergus/Library/Application\ Support/iTerm2/Scripts
+    mkdir -p ~/Library/Application\ Support/iTerm2/Scripts/AutoLaunch && ln -sf ~/.dotfiles/iterm/darkmode.py ~/Library/Application\ Support/iTerm2/Scripts/AutoLaunch
     ```
 
 1. Install vim plugins
