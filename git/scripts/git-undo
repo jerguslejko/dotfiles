@@ -4,7 +4,7 @@ set -e
 
 changes=$(git status --short)
 
-if [[ ! -z "$changes" && $1 != "--force" ]]; then
+if [[ ! -z "$changes" && $1 != "--force" && $1 != "-f" ]]; then
     echo "error: index is modified. refusing to undo last commit" && exit 1
 else
     git reset HEAD~1
