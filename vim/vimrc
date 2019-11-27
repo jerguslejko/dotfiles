@@ -19,14 +19,15 @@ set spellcapcheck=                                                      "Allow s
 set exrc                                                                "Support per-project .vimrc files
 set secure                                                              "^^ works safely
 
-set wildignore=*.o,*.pyc                                                "Hide files
-
 "Swap files out of the project root
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//
 set viminfo+=n~/.vim/.viminfo
 
 "----------------Mappings----------------
+"Alias :W to :w
+cnoreabbrev W w
+
 "Disable arrow keys
 noremap <Up> <NOP>
 noremap <Down> <NOP>
@@ -39,9 +40,7 @@ imap jj <Esc>
 "Shortcut for editing ~/.vimrc
 nmap <Leader>ev :e $MYVIMRC<cr>
 nmap <Leader>ed :e ~/.dotfiles<cr>
-
-"Turn off spell check
-nmap <Leader>ns :set nospell<cr>
+nmap <Leader>ep :e ~/.dotfiles/vim/plugins.vim<cr>
 
 "Set shortcuts for moving lines
 nmap <C-j> :m +1<CR>
@@ -62,15 +61,8 @@ augroup autosourcing
     autocmd! BufWritePost plugins.vim source %
 augroup END
 
-augroup phpcsfixer
-    autocmd! BufWritePost *.php silent! ![ -f vendor/bin/php-cs-fixer ] && vendor/bin/php-cs-fixer fix --quiet %
-augroup END
-
-augroup autoreloading
-    autocmd! BufWritePost * CtrlPClearCache
-augroup END
-
 "Auto-remove trailing whitespace
-autocmd BufWritePre * :%s/\s\+$//e
+augroup trailing
+    autocmd BufWritePre * :%s/\s\+$//e
+augroup END
 
-let g:ctrlp_user_command  = '[ -d .git ] && (git ls-files) || (find %s -type f)'
