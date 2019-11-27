@@ -451,6 +451,8 @@
 	<false/>
 	<key>DisableFullscreenTransparency</key>
 	<false/>
+	<key>DockIconTogglesWindow</key>
+	<true/>
 	<key>EnableAPIServer</key>
 	<true/>
 	<key>EnableDivisionView</key>
@@ -476,15 +478,19 @@
 	<key>HideTabNumber</key>
 	<true/>
 	<key>Hotkey</key>
-	<true/>
+	<false/>
 	<key>HotkeyChar</key>
-	<integer>167</integer>
+	<integer>0</integer>
 	<key>HotkeyCode</key>
-	<integer>10</integer>
+	<integer>0</integer>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
 	<key>HotkeyModifiers</key>
-	<integer>256</integer>
+	<integer>0</integer>
+	<key>HotkeyWindowFloatsAboveOtherWindows</key>
+	<true/>
+	<key>HotkeyWindowsExcludedFromCycling</key>
+	<false/>
 	<key>JobName</key>
 	<true/>
 	<key>LeftOption</key>
@@ -545,7 +551,7 @@
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 64 1680 963 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>422 285 850 490 0 0 1680 1027 </string>
+	<string>0 64 1680 963 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>233 78 850 490 0 0 1680 1027 </string>
 	<key>NeverWarnAboutShortLivedSessions_6BDBBBC1-A85A-487B-A024-4972A854B7C7</key>
@@ -556,6 +562,8 @@
 	<array>
 		<dict>
 			<key>ASCII Anti Aliased</key>
+			<true/>
+			<key>ASCII Ligatures</key>
 			<true/>
 			<key>Ambiguous Double Width</key>
 			<false/>
@@ -911,13 +919,13 @@
 			<key>HotKey Window Animates</key>
 			<false/>
 			<key>HotKey Window AutoHides</key>
-			<false/>
+			<true/>
 			<key>HotKey Window Dock Click Action</key>
 			<integer>0</integer>
 			<key>HotKey Window Floats</key>
 			<false/>
 			<key>HotKey Window Reopens On Activation</key>
-			<false/>
+			<true/>
 			<key>Icon</key>
 			<integer>1</integer>
 			<key>Idle Code</key>
@@ -1206,7 +1214,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Consolas 13</string>
+			<string>CascadiaCode-Regular 14</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1413,7 +1421,7 @@
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
-		<string>Consolas</string>
+		<string>Cascadia Code</string>
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
@@ -1429,14 +1437,14 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{429, 975}</string>
+		<string>{515, 906}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>7642C788-E705-428A-B54F-D82C75BFED71</string>
 	<key>NoSyncLastTipTime</key>
 	<real>592659614.30215001</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>32</integer>
+	<integer>36</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1450,7 +1458,7 @@
 	<key>NoSyncPersistentRateLimitedUpdates</key>
 	<dict>
 		<key>CheckForUpdatedPythonRuntime</key>
-		<real>593170392.099666</real>
+		<real>595267756.68106699</real>
 	</dict>
 	<key>NoSyncRecordedVariables</key>
 	<dict>
@@ -2200,16 +2208,16 @@
 	</dict>
 	<key>NoSyncSearchHistory2</key>
 	<array>
+		<string>192.168.</string>
+		<string>react</string>
+		<string>opencv</string>
+		<string>closed_at</string>
+		<string>branch</string>
+		<string>avai</string>
+		<string>avail</string>
+		<string>pull_request_</string>
 		<string>fields</string>
 		<string>master-</string>
-		<string>enter_at</string>
-		<string>fcpa</string>
-		<string>contracts.</string>
-		<string>contracts.id</string>
-		<string>onboarding_tat</string>
-		<string>count</string>
-		<string>couht</string>
-		<string>10 13</string>
 	</array>
 	<key>NoSyncTipOfTheDayEligibilityBeganTime</key>
 	<real>592175961.08811605</real>
@@ -2286,7 +2294,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-10-21T09:34:28Z</date>
+	<date>2019-11-10T16:09:16Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
