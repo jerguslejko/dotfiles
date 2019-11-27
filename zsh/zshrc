@@ -7,9 +7,6 @@ plugins=()
 # bootstrap oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
-# reset
-unalias l
-
 # custom theme
 PROMPT='%{$fg[yellow]%}%{$fg[green]%}%c %{$fg[yellow]%}→ $(git_prompt_info)%{$reset_color%}'
 
@@ -26,7 +23,7 @@ bindkey '^[[Z' reverse-menu-complete # make shift-tab work
 bindkey '^R' history-incremental-search-backward
 
 # autojump
-[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+[ -f /usr/local/etc/profile.d/autojump.sh ] && source /usr/local/etc/profile.d/autojump.sh
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
