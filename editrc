@@ -1,0 +1,4 @@
+bind -v
+
+bind ^p ed-prev-history
+bind ^n ed-next-history
