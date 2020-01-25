@@ -500,9 +500,13 @@
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/.dotfiles/iterm</string>
+	<string>~/Documents</string>
+	<key>NSNavLastUserSetHideExtensionButtonState</key>
+	<true/>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{799, 448}</string>
+	<key>NSNavPanelExpandedSizeForSaveMode</key>
+	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -547,9 +551,9 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>0 148 224 275 0 0 1680 1027 </string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>440 453 799 448 0 0 1680 1027 </string>
+	<string>666 650 347 181 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 509 970 518 0 0 1680 1027 </string>
+	<string>0 65 1680 962 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 65 1680 962 0 0 1680 1027 </string>
 	<key>NeverWarnAboutShortLivedSessions_6BDBBBC1-A85A-487B-A024-4972A854B7C7</key>
@@ -1432,7 +1436,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>A866FB27-3C2E-46AE-8D8A-7E3896D1A0E3</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>6</integer>
+	<integer>13</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1446,7 +1450,7 @@
 	<key>NoSyncPersistentRateLimitedUpdates</key>
 	<dict>
 		<key>CheckForUpdatedPythonRuntime</key>
-		<real>599844937.65291703</real>
+		<real>600989867.74534404</real>
 	</dict>
 	<key>NoSyncRecordedVariables</key>
 	<dict>
@@ -2154,12 +2158,20 @@
 			</dict>
 		</array>
 	</dict>
+	<key>NoSyncSaveDocumentAsPathSet_saveDocumentAs:</key>
+	<true/>
 	<key>NoSyncSearchHistory2</key>
 	<array>
-		<string>remove_invalid</string>
-		<string>remove_on</string>
-		<string>snip</string>
-		<string>text</string>
+		<string>keycode</string>
+		<string>demo</string>
+		<string>null</string>
+		<string>signatories</string>
+		<string>signatoi</string>
+		<string>supplier_</string>
+		<string>_SnP_</string>
+		<string>approved_at</string>
+		<string>local</string>
+		<string>contract</string>
 	</array>
 	<key>NoSyncTipOfTheDayEligibilityBeganTime</key>
 	<real>599066872.37538195</real>
@@ -2227,7 +2239,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-01-03T15:30:58Z</date>
+	<date>2020-01-15T14:58:03Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SensitiveScrollWheel</key>
