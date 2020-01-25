@@ -6,9 +6,6 @@ alias rm="$(brew --prefix)/bin/trash" # brew install trash
 alias show_hidden="defaults write com.apple.finder AppleShowAllFiles -bool YES && killall Finder"
 alias hide_hidden="defaults write com.apple.finder AppleShowAllFiles -bool NO  && killall Finder"
 
-# macOS is great!
-alias kill_touchbar="pkill 'Touch Bar agent' && killall 'ControlStrip'"
-
 # brew install bat
 cat() {
     $(brew --prefix)/bin/bat \
