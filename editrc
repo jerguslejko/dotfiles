@@ -1,4 +1,7 @@
 bind -v
 
+# tab completion
+bind \\t rl_complete
+
 bind ^p ed-prev-history
 bind ^n ed-next-history
