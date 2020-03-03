@@ -1,5 +1,4 @@
 # Tools
-alias git="$(brew --prefix)/bin/hub" # brew install hub
 alias rm="$(brew --prefix)/bin/trash" # brew install trash
 
 # Hidden files
