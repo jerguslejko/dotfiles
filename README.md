@@ -38,6 +38,7 @@
 
     ```shell
     ln -sf ~/.dotfiles/editrc ~/.editrc
+    ln -sf ~/.dotfiles/inputrc ~/.inputrc
     ln -sf ~/.dotfiles/vim/vimrc ~/.vimrc
     ln -sf ~/.dotfiles/zsh/zshrc ~/.zshrc
     ln -sf ~/.dotfiles/zsh/zshenv ~/.zshenv
