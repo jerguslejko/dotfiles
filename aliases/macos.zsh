@@ -11,5 +11,5 @@ cat() {
         --paging never \
         --plain \
         --theme="$(defaults read -globalDomain AppleInterfaceStyle &> /dev/null && echo Monokai Extended || echo GitHub)" \
-        $1
+        $@
 }
