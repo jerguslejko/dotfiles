@@ -559,7 +559,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>530 493 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 70 1680 957 0 0 1680 1050 </string>
+	<string>423 324 834 450 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 509 970 518 0 0 1680 1027 </string>
 	<key>NeverWarnAboutShortLivedSessions_6BDBBBC1-A85A-487B-A024-4972A854B7C7</key>
@@ -1451,7 +1451,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>A866FB27-3C2E-46AE-8D8A-7E3896D1A0E3</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>37</integer>
+	<integer>39</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1465,7 +1465,7 @@
 	<key>NoSyncPersistentRateLimitedUpdates</key>
 	<dict>
 		<key>CheckForUpdatedPythonRuntime</key>
-		<real>608797313.99699402</real>
+		<real>609513841.66154504</real>
 	</dict>
 	<key>NoSyncRecordedVariables</key>
 	<dict>
@@ -2194,7 +2194,7 @@
 	<key>PMPrintingExpandedStateForPrint2</key>
 	<false/>
 	<key>PasteTabToStringTabStopSize</key>
-	<integer>4</integer>
+	<integer>0</integer>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -2247,7 +2247,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-04-18T12:20:27Z</date>
+	<date>2020-04-25T12:34:28Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
