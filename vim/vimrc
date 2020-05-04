@@ -7,6 +7,7 @@ let mapleader = ','                                                     "Set <Le
 set nocompatible                                                        "Force VIM to behave 'normally'
 set textwidth=0                                                         "Set hard-limit for line length
 set backspace=indent,eol,start                                          "Make backspace work 'normally'
+set number "this and relativenumber are used in combination
 set relativenumber                                                              "Turn on line numbers
 set tabstop=4 shiftwidth=4 softtabstop=4 expandtab                      "Make tabs work 'normally'
 set ic                                                                  "Make searching case-insensitive
