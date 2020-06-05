@@ -75,6 +75,10 @@
 * MySQL
 
     ```sql
-    CREATE USER 'jergus'@'localhost';
+    CREATE USER 'jergus'@'localhost'; -- IDENTIFIED WITH mysql_native_password
     GRANT ALL PRIVILEGES ON * . * TO 'jergus'@'localhost';
     ```
+
+
+CREATE USER 'ohdear_ci'@'localhost' IDENTIFIED WITH mysql_native_password BY 'ohdear_secret';
+GRANT ALL PRIVILEGES ON ohdear_ci.* TO 'ohdear_ci'@'localhost';
