@@ -2,6 +2,7 @@
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH" # brew
 
+export PATH="./vendor/bin:$PATH"
 export PATH="$PATH:$HOME/.composer/vendor/bin"
 export PATH="$PATH:$HOME/.config/yarn/global/node_modules/.bin"
 export PATH="$PATH:/usr/local/opt/mysql@5.7/bin"
