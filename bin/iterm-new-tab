@@ -1,0 +1,10 @@
+#!/bin/bash
+
+quote() {
+    local quoted=${@//\'/\'\\\'\'};
+    printf '%s' "$quoted"
+}
+
+osascript \
+    -e 'tell application "iTerm2" to tell current window to set newWindow to (create tab with default profile)'\
+    -e "tell application \"iTerm2\" to tell current session of newWindow to write text \"$(quote $@)\""
