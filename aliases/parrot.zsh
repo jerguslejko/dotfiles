@@ -1,7 +1,12 @@
 alias py="python3"
+alias pip="/usr/local/bin/pip3"
+alias python="/usr/local/bin/python3"
+
 alias pyman="python3 manage.py"
 alias pyrun="python3 manage.py runserver"
 alias pytest="python3 manage.py test --keepdb --exclude-tag=external"
+
+alias dc="docker-compose"
 
 export HUSKY_SKIP_INSTALL=true
 
@@ -18,13 +23,11 @@ k9s_sandbox() {
 }
 
 parrot() {
-    if [[ $0 -eq "shell" ]]; then
-        cd ~/Code/parrot && docker-compose exec api bash
-    fi
+    python3 ~/Code/.parrot/bar/cli.py $@
 }
 
-export PATH="$PATH:~/.composer/vendor/bin"
+export PATH="$PATH:$HOME/Library/Python/3.8/bin"
 
-# If you are on MacOS and have many popups about Chromium when these tests run, please see: https://github.com/puppeteer/puppeteer/issues/4752
+# see: https://github.com/puppeteer/puppeteer/issues/4752
 alias sign_puppeteer="sudo codesign --force --deep --sign - ./node_modules/puppeteer/.local-chromium/mac-*/chrome-mac/Chromium.app"
 alias sign_electron="sudo codesign --force --deep --sign - ./node_modules/electron/dist/Electron.app"
