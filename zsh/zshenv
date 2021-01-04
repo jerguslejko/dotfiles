@@ -8,6 +8,7 @@ export PATH="$PATH:$HOME/.config/yarn/global/node_modules/.bin"
 export PATH="$PATH:/usr/local/opt/mysql@5.7/bin"
 export PATH="$PATH:$HOME/.dotfiles/bin"
 export PATH="$PATH:$HOME/.dotfiles/git/scripts"
+export PATH="$PATH:$HOME/.cargo/bin"
 
 # hide duplicates in <ctrl>-<r>
 setopt HIST_FIND_NO_DUPS
