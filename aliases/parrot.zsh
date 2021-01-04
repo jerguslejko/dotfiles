@@ -14,11 +14,11 @@ k9s() {
     echo "error: either use [k9s_production] or [k9s_sandbox]" && return 1
 }
 
-k9s_production() {
+k9s:production() {
     /usr/local/bin/k9s --context arn:aws:eks:us-east-1:325310340739:cluster/production
 }
 
-k9s_sandbox() {
+k9s:sandbox() {
     /usr/local/bin/k9s --context arn:aws:eks:us-east-1:325310340739:cluster/sandbox
 }
 
