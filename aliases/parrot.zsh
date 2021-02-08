@@ -2,10 +2,6 @@ alias py="python3"
 alias pip="/usr/local/bin/pip3"
 alias python="/usr/local/bin/python3"
 
-alias pyman="python3 manage.py"
-alias pyrun="python3 manage.py runserver"
-alias pytest="python3 manage.py test --keepdb --exclude-tag=external"
-
 alias dc="docker-compose"
 
 export HUSKY_SKIP_INSTALL=true
@@ -22,7 +18,7 @@ k9s:sandbox() {
     /usr/local/bin/k9s --context arn:aws:eks:us-east-1:325310340739:cluster/sandbox
 }
 
-parrot() {
+par() {
     python3 ~/Code/.parrot/bar/cli.py $@
 }
 
